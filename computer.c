@@ -18,7 +18,7 @@ void PrintInstruction (DecodedInstr*);
 /*Globally accessible Computer variable*/
 Computer mips;
 RegVals rVals;
-Control 
+Control brain;
 
 /*
  *  Return an initialized computer with the stack pointer set to the
@@ -218,8 +218,6 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				rVals->R_rs = mips.registers[d->regs.i.rs];
 			break;
 		}
-	// Fill DecodedInstr
-	// Read registers
 	// Fill RegVals
 	// Extend immediates
 }
@@ -229,7 +227,105 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
  *  followed by a newline.
  */
 void PrintInstruction ( DecodedInstr* d) {
-    /* Your code goes here */
+    /* Your code goes here */	
+	char* i;
+	int rd, rs, rt, imm;
+	switch (d->op) {
+		case 0:
+			switch (d->regs.r.funct) {
+				case 0x00: // sll
+					i = "sll"; break;
+				case 0x02: // srl
+					i = "srl"; break;
+				case 0x08: // jr
+					i = "jr"; break;
+				case 0x21: // addu
+					i = "addu"; break;
+				case 0x23: // subu
+					i = "subu"; break;
+				case 0x24: // and
+					i = "and"; break;
+				case 0x25: // or
+					i = "or"; break;
+				case 0x2a: // slt
+					i = "slt";
+				default:
+					exit(0); break;
+			} break;
+		case 0x2: // j	
+			i = "j"; break;
+		case 0x3: // jal
+			i = "jal"; break;
+		case 0x04: // beq
+			i = "beq"; break;
+		case 0x05: // bne
+			i = "bne"; break;
+		case 0x09: // addiu
+			i = "addiu"; break;
+		case 0x0c: // andi
+			i = "andi"; break;
+		case 0x0d: // ori
+			i = "ori"; break;
+		case 0x0f: // lui
+			i = "lui"; break;
+		case 0x23: // lw
+			i = "lw"; break;
+		case 0x2b: // sw
+			i = "sw"; break;
+		default:
+			exit(0); break;	
+	}
+	if (d->type == R) {
+		rd = d->regs.r.rd;
+		rs = d->regs.r.rs;
+		rt = d->regs.r.rt;
+		if (d->regs.r.funct == 0x00 || d->regs.r.funct == 0x02) {
+			imm = d->regs.r.shamt;
+			printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // addiu, srl, sll
+		}
+		else if (d->regs.r.funct == 0x08)
+			printf("%s \t$%d\n", i, rs); //jr
+		else
+			printf("%s\t$%d, $%d, $%d\n", i, rd, rs, rt);
+	}
+	else if (d->type == I) {
+		rs = d->regs.i.rs;
+		rt = d->regs.i.rt;
+		imm = d->regs.i.addr_or_immed;
+		if (d->op == 0x09)
+			printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // addiu, srl, sll
+		else if (d->op == 0x0c || d->op == 0x0d || d->op == 0x0f)
+			printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, imm); // andi, ori, lui
+		else if (d->op == 0x23 || d->op == 0x2b)
+			printf("%s\t$%d, $%d($%d)\n", i, rt, rs, imm); // lw, sw
+		else if (d->op == 0x04 || d->op == 0x05)
+			printf("%s\t$%d, $%d, 0x%0.8x\n", i, rt, rs, mips.pc + imm * 4); // branch
+	}
+	else if (d->type == J) {
+		imm = d->regs.j.target << 2;
+		printf("%s\t0x%0.8x\n", i, imm); // jump
+	}
+
+	/*
+addu
+addiu
+subu
+sll
+srl
+and
+andi
+or
+ori
+lui
+slt
+beq
+bne
+j
+jal
+jr
+lw
+sw
+	*/
 }
 
 /* Perform computation needed to execute d, returning computed value */
@@ -239,55 +335,72 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 	switch (d->op) {
 		case 0:
 			switch (d->regs.r.funct) {
-				case 0x20: // add
-					rVals->R_rd = rVals->R_rs + rVals->R_rt; break;
-				case 0x21: // addu
-					rVals->R_rd = rVals->R_rs + rVals->R_rt; break;
-				case 0x24: // and
-					rVals->R_rd = rVals->R_rs & rVals->R_rt; break;
-				case 0x08: // jr
-					
-				case 0x27: // nor
-					rVals->R_rd = !rVals->R_rs & !rVals->R_rt; break;
-				case 0x25: // or
-					rVals->R_rd = rVals->R_rs | rVals->R_rt; break;
-				case 0x2a: // slt
-					
-				case 0x2b: // sltu
-					
 				case 0x00: // sll
-					rVals->R_rd = rVals->R_rs << rVals->R_rt; break;
+					return rVals->R_rd = rVals->R_rt << d->regs.r.shamt; break;
 				case 0x02: // srl
-					rVals->R_rd = rVals->R_rs >> rVals->R_rt; break;
-				case 0x22: // sub
-					rVals->R_rd = rVals->R_rs - rVals->R_rt; break;
+					return rVals->R_rd = rVals->R_rt >> d->regs.r.shamt; break;
+				// case 0x03: // sra
+				// 	return rVals->R_rd = rVals->R_rt >> d->regs.r.shamt + rVals->R_rt & 0x10000000; break;
+				// case 0x04: // sllv
+				//	return rVals->R_rd = rVals->R_rt << rVals->R_rs; break;
+				// case 0x06: // srlv
+				//	return rVals->R_rd = rVals->R_rt >> rVals->R_rs; break;
+				// case 0x07: // srav
+				//	return rVals->R_rd = rVals->R_rt >> rVals->R_rs + rVals->R_rt & 0x10000000; break;
+				case 0x08: // jr
+					return rVals->R_rs; break;
+				// case 0x20: // add	
+				case 0x21: // addu
+					return rVals->R_rd = rVals->R_rs + rVals->R_rt; break;
+				// case 0x22: // sub
 				case 0x23: // subu
-					rVals->R_rd = rVals->R_rs - rVals->R_rt; break;
-			}
-		break;
+					return rVals->R_rd = rVals->R_rs - rVals->R_rt; break;
+				case 0x24: // and
+					return rVals->R_rd = rVals->R_rs & rVals->R_rt; break;
+				case 0x25: // or
+					return rVals->R_rd = rVals->R_rs | rVals->R_rt; break;
+				// case 0x26: // xor
+				//	return rVals->R_rd = rVals->R_rs ^ rVals->R_rt; break;
+				// case 0x27: // nor
+				//	return rVals->R_rd = !rVals->R_rs & !rVals->R_rt; break;
+				case 0x2a: // slt
+				// case 0x2b: // sltu
+					return rVals->R_rd = rVals->R_rs < rVals->R_rt; break;
+				default:
+					exit(0); break;
+
+			} break;
 		case 2: // j
-			
-		break;
+			break;
 		case 3: // jal
-		break;
-			
-		case 0x08: // addi	
-		case 0x09: // addiu
-		case 0x0c: // andi
+			return mips.pc + 4;
 		case 0x04: // beq
+			return rVals->R_rs == rVals->R_rt;
 		case 0x05: // bne
-		case 0x24: // lbu
-		case 0x25: // lhu
-		case 0x30: // ll
-		case 0x0f: // lui
-		case 0x23: // lw
+			return rVals->R_rs != rVals->R_rt;
+		// case 0x08: // addi		
+		case 0x09: // addiu
+			return rVals->R_rt = rVals->R_rs + d->regs.i.addr_or_immed;
+		// case 0x0a: // slti
+		// case 0x0b: // sltiu
+		// 	return rVals->R_rt = rVals->R_rs < d->regs.i.addr_or_immed;
+		case 0x0c: // andi
+			return rVals->R_rt = rVals->R_rs & d->regs.i.addr_or_immed;
 		case 0x0d: // ori
-		case 0x0a: // slti
-		case 0x0b: // sltiu
-		case 0x28: // sb
-		case 0x38: // sc
-		case 0x29: // sh
+			return rVals->R_rt = rVals->R_rs | d->regs.i.addr_or_immed;
+		case 0x0f: // lui
+			break;
+		case 0x23: // lw
+		// case 0x24: // lbu
+		// case 0x25: // lhu
+		// case 0x28: // sb
+		// case 0x29: // sh
 		case 0x2b: // sw
+		// case 0x30: // ll
+		// case 0x38: // sc
+			return rVals->R_rs + d->regs.i.addr_or_immed; break;
+		default:
+			exit(0); break;
 	}
   return 0;
 }
@@ -298,8 +411,17 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
  * increments by 4 (which we have provided).
  */
 void UpdatePC ( DecodedInstr* d, int val) {
-    mips.pc+=4;
+    mips.pc += 4;
     /* Your code goes here */
+	if (d->type == R && d->regs.r.funct == 0x08)
+		mips.pc = mips.registers[d->regs.r.rs];
+	else if (d->type == I && (d->op == 0x04 || d->op == 0x05)) {
+		if (val)
+			mips.pc += d->regs.i.addr_or_immed * 4;
+	}
+	else if (d->type == J)	
+		mips.pc = d->regs.j.target << 2;
+
 }
 
 /*
@@ -319,22 +441,25 @@ int Mem( DecodedInstr* d, int val, int *changedMem) {
 	// If outside 0x00401000 to 0x00403fff or lw or sw and not word aligned
 		// Print specific error message
 		// Call exit(0);
-	if (d->regs.i.addr_or_immed < 0x00401000 || d->regs.i.addr_or_immed > 0x00403fff) {
-		printf("Memory Access Exception at 0x[PC val]: address 0x[address]");
+	if ((d->op == 0x23 || d->op == 0x2b) && ((d->regs.i.addr_or_immed < 0x00401000 || d->regs.i.addr_or_immed > 0x00403fff) || d->regs.i.addr_or_immed % 4 !=0)) {
+		printf("Memory Access Exception at 0x%0.8x: address 0x%0.8x", mips.pc, d->regs.i.addr_or_immed);
 		exit(0);
 	}
+	*changedMem = -1;
 	switch (d->op) {
-		case 0x24: // lbu
-		case 0x25: // lhu
-		case 0x30: // ll
-		case 0x0f: // lui
+		// case 0x24: // lbu
+		// case 0x25: // lhu
+		// case 0x30: // ll
 		case 0x23: // lw
-		case 0x28: // sb
-		case 0x38: // sc
-		case 0x29: // sh
+			return mips.memory[val / 4 - 0x00400000];
+		// case 0x28: // sb
+		// case 0x38: // sc
+		// case 0x29: // sh
 		case 0x2b: // sw
+			*changedMem = val;
+			mips.memory[val / 4 - 0x00400000] = mips.registers[d->regs.i.rt]; break;
 	}
-  return 0;
+	return val;
 }
 
 /* 
@@ -345,5 +470,48 @@ int Mem( DecodedInstr* d, int val, int *changedMem) {
  */
 void RegWrite( DecodedInstr* d, int val, int *changedReg) {
     /* Your code goes here */
-	mips.registers[
+	switch (d->op) {
+		case 0:
+			switch (d->regs.r.funct) {
+				case 0x00: // sll
+				case 0x02: // srl	
+				case 0x21: // addu
+				case 0x23: // subu
+				case 0x24: // and
+				case 0x25: // or
+				case 0x2a: // slt
+					*changedReg = d->regs.r.rd;
+					mips.registers[d->regs.r.rd] = val;
+					break;
+				case 0x08: //jr
+					*changedReg = -1; break;
+				default:
+					exit(0); break;
+			} break;
+		case 0x03: // jal
+			*changedReg = 31;
+			mips.registers[31] = val;
+			break;
+		case 0x09: // addiu
+		case 0x0c: // andi
+		case 0x0d: // ori
+			*changedReg = d->regs.i.rt;
+			mips.registers[d->regs.i.rt] = val;
+			break;
+		case 0x0f: // lui
+			*changedReg = d->regs.i.rt;
+			mips.registers[d->regs.i.rt] &= val;
+			break;
+		case 0x23: // lw
+			*changedReg = d->regs.r.rt;
+			mips.registers[d->regs.i.rt] = val;
+			break;
+		case 0x2b: // sw
+		case 0x02: // j
+		case 0x04: // beq
+		case 0x05: // bne
+			*changedReg = -1; break;
+		default:	
+			exit(0); break;	
+	}
 }

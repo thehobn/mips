@@ -49,3 +49,15 @@ typedef struct {
 void InitComputer (FILE*, int printingRegisters, int printingMemory,
     int debugging, int interactive);
 void Simulate ();
+
+typedef struct {
+	int RegDst;
+	int Jump;
+	int Branch;
+	int MemRead;
+	int MemtoReg;
+	int ALUOp;
+	int MemWrite;
+	int ALUSrc;
+	int RegWrite;
+} Control;

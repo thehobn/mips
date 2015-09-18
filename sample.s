@@ -4,18 +4,18 @@
 #
 
 		.text
-		addiu	$a0,$0,3
-		addiu	$a1,$0,2
-		jal	Mystery
-		addi	$0,$0,0 #unsupported instruction, terminate
+00		addiu	$a0,$0,3
+04		addiu	$a1,$0,2
+08		jal	Mystery
+0c		addi	$0,$0,0 #unsupported instruction, terminate
 
 
 Mystery:
-		addiu	$v0,$0,0
+10		addiu	$v0,$0,0
 Loop:
-		beq	$a0,$0,Done
-		addu	$v0,$v0,$a1
-		addiu	$a0,$a0,-1
-		j Loop
+14		beq	$a0,$0,Done
+18		addu	$v0,$v0,$a1
+1c		addiu	$a0,$a0,-1
+20		j Loop
 Done:	
-		jr		$ra
+24		jr		$ra
