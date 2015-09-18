@@ -181,10 +181,8 @@ unsigned int Fetch ( int addr) {
 
 /* Decode instr, returning decoded instruction. */
 void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
-    /* Your code goes here */
-	// Parse instr	
 		d->op = instr >> 26;
-		switch (d->op) {
+		switch ((opcode)d->op) {
 			// Bitmask to get fields
 			case 0: // R-type:
 				// opcode	rs	rt	rd	shamt	funct
@@ -197,11 +195,12 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				d->regs.r.funct = instr & 0x0000003F;		
 				rVals->R_rs = mips.registers[d->regs.r.rs];
 				rVals->R_rt = mips.registers[d->regs.r.rt];
+				rVals->R_rd = mips.registers[d->regs.r.rd];
 			break;	
 
-			case 3: // Jump and link	
+			case j: // Jump and link	
 				// Set $ra
-			case 2:	// Jumps
+			case jal:	// Jumps
 				// opcode	addr
 				// 31-26	26-0
 				d->type = J;
@@ -216,10 +215,9 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				d->regs.i.rt = (instr & 0x001F0000) >> 16;
 				d->regs.i.addr_or_immed = instr & 0x0000FFFF;
 				rVals->R_rs = mips.registers[d->regs.i.rs];
+				rVals->R_rt = mips.registers[d->regs.i.rt];
 			break;
 		}
-	// Fill RegVals
-	// Extend immediates
 }
 
 /*
@@ -230,47 +228,47 @@ void PrintInstruction ( DecodedInstr* d) {
     /* Your code goes here */	
 	char* i;
 	int rd, rs, rt, imm;
-	switch (d->op) {
+	switch ((opcode)d->op) {
 		case 0:
-			switch (d->regs.r.funct) {
-				case 0x00: // sll
+			switch ((funct)d->regs.r.funct) {
+				case sll: // sll
 					i = "sll"; break;
-				case 0x02: // srl
+				case srl: // srl
 					i = "srl"; break;
-				case 0x08: // jr
+				case jr: // jr
 					i = "jr"; break;
-				case 0x21: // addu
+				case addu: // addu
 					i = "addu"; break;
-				case 0x23: // subu
+				case subu: // subu
 					i = "subu"; break;
-				case 0x24: // and
+				case and: // and
 					i = "and"; break;
-				case 0x25: // or
+				case or: // or
 					i = "or"; break;
-				case 0x2a: // slt
+				case slt: // slt
 					i = "slt";
 				default:
 					exit(0); break;
 			} break;
-		case 0x2: // j	
+		case j: // j	
 			i = "j"; break;
-		case 0x3: // jal
+		case jal: // jal
 			i = "jal"; break;
-		case 0x04: // beq
+		case beq: // beq
 			i = "beq"; break;
-		case 0x05: // bne
+		case bne: // bne
 			i = "bne"; break;
-		case 0x09: // addiu
+		case addiu: // addiu
 			i = "addiu"; break;
-		case 0x0c: // andi
+		case andi: // andi
 			i = "andi"; break;
-		case 0x0d: // ori
+		case ori: // ori
 			i = "ori"; break;
-		case 0x0f: // lui
+		case lui: // lui
 			i = "lui"; break;
-		case 0x23: // lw
+		case lw: // lw
 			i = "lw"; break;
-		case 0x2b: // sw
+		case sw: // sw
 			i = "sw"; break;
 		default:
 			exit(0); break;	
@@ -291,7 +289,7 @@ void PrintInstruction ( DecodedInstr* d) {
 	else if (d->type == I) {
 		rs = d->regs.i.rs;
 		rt = d->regs.i.rt;
-		imm = d->regs.i.addr_or_immed;
+		imm = (short) d->regs.i.addr_or_immed;
 		if (d->op == 0x09)
 			printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // addiu, srl, sll
 		else if (d->op == 0x0c || d->op == 0x0d || d->op == 0x0f)
@@ -302,30 +300,9 @@ void PrintInstruction ( DecodedInstr* d) {
 			printf("%s\t$%d, $%d, 0x%0.8x\n", i, rt, rs, mips.pc + imm * 4); // branch
 	}
 	else if (d->type == J) {
-		imm = d->regs.j.target << 2;
+		imm = d->regs.j.target << 2; // upper 4 bits will always be 0000
 		printf("%s\t0x%0.8x\n", i, imm); // jump
 	}
-
-	/*
-addu
-addiu
-subu
-sll
-srl
-and
-andi
-or
-ori
-lui
-slt
-beq
-bne
-j
-jal
-jr
-lw
-sw
-	*/
 }
 
 /* Perform computation needed to execute d, returning computed value */
@@ -333,74 +310,44 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
     /* Your code goes here */
 	// Return ALU result (including lw, branch comparison, etc)
 	switch (d->op) {
-		case 0:
+		case 0x00:
 			switch (d->regs.r.funct) {
 				case 0x00: // sll
-					return rVals->R_rd = rVals->R_rt << d->regs.r.shamt; break;
+					return rVals->R_rt << d->regs.r.shamt;
 				case 0x02: // srl
-					return rVals->R_rd = rVals->R_rt >> d->regs.r.shamt; break;
-				// case 0x03: // sra
-				// 	return rVals->R_rd = rVals->R_rt >> d->regs.r.shamt + rVals->R_rt & 0x10000000; break;
-				// case 0x04: // sllv
-				//	return rVals->R_rd = rVals->R_rt << rVals->R_rs; break;
-				// case 0x06: // srlv
-				//	return rVals->R_rd = rVals->R_rt >> rVals->R_rs; break;
-				// case 0x07: // srav
-				//	return rVals->R_rd = rVals->R_rt >> rVals->R_rs + rVals->R_rt & 0x10000000; break;
+					return rVals->R_rt >> d->regs.r.shamt;
 				case 0x08: // jr
-					return rVals->R_rs; break;
-				// case 0x20: // add	
+					return rVals->R_rs;
 				case 0x21: // addu
-					return rVals->R_rd = rVals->R_rs + rVals->R_rt; break;
-				// case 0x22: // sub
+					return (short) rVals->R_rs + (short) rVals->R_rt;
 				case 0x23: // subu
-					return rVals->R_rd = rVals->R_rs - rVals->R_rt; break;
+					return (short) rVals->R_rs - (short)rVals->R_rt;
 				case 0x24: // and
-					return rVals->R_rd = rVals->R_rs & rVals->R_rt; break;
+					return rVals->R_rs & rVals->R_rt;
 				case 0x25: // or
-					return rVals->R_rd = rVals->R_rs | rVals->R_rt; break;
-				// case 0x26: // xor
-				//	return rVals->R_rd = rVals->R_rs ^ rVals->R_rt; break;
-				// case 0x27: // nor
-				//	return rVals->R_rd = !rVals->R_rs & !rVals->R_rt; break;
+					return rVals->R_rs | rVals->R_rt;
 				case 0x2a: // slt
-				// case 0x2b: // sltu
-					return rVals->R_rd = rVals->R_rs < rVals->R_rt; break;
-				default:
-					exit(0); break;
-
+					return rVals->R_rs < rVals->R_rt;
 			} break;
-		case 2: // j
+		case 0x02: // j
 			break;
-		case 3: // jal
+		case 0x03: // jal
 			return mips.pc + 4;
 		case 0x04: // beq
 			return rVals->R_rs == rVals->R_rt;
 		case 0x05: // bne
 			return rVals->R_rs != rVals->R_rt;
-		// case 0x08: // addi		
 		case 0x09: // addiu
-			return rVals->R_rt = rVals->R_rs + d->regs.i.addr_or_immed;
-		// case 0x0a: // slti
-		// case 0x0b: // sltiu
-		// 	return rVals->R_rt = rVals->R_rs < d->regs.i.addr_or_immed;
+			return (short) rVals->R_rs + (short) d->regs.i.addr_or_immed;
 		case 0x0c: // andi
-			return rVals->R_rt = rVals->R_rs & d->regs.i.addr_or_immed;
+			return rVals->R_rs & d->regs.i.addr_or_immed;
 		case 0x0d: // ori
-			return rVals->R_rt = rVals->R_rs | d->regs.i.addr_or_immed;
+			return rVals->R_rs | d->regs.i.addr_or_immed;
 		case 0x0f: // lui
 			break;
 		case 0x23: // lw
-		// case 0x24: // lbu
-		// case 0x25: // lhu
-		// case 0x28: // sb
-		// case 0x29: // sh
 		case 0x2b: // sw
-		// case 0x30: // ll
-		// case 0x38: // sc
-			return rVals->R_rs + d->regs.i.addr_or_immed; break;
-		default:
-			exit(0); break;
+			return rVals->R_rs + d->regs.i.addr_or_immed;
 	}
   return 0;
 }
@@ -415,12 +362,12 @@ void UpdatePC ( DecodedInstr* d, int val) {
     /* Your code goes here */
 	if (d->type == R && d->regs.r.funct == 0x08)
 		mips.pc = mips.registers[d->regs.r.rs];
-	else if (d->type == I && (d->op == 0x04 || d->op == 0x05)) {
+	else if (d->op == 0x04 || d->op == 0x05) {
 		if (val)
 			mips.pc += d->regs.i.addr_or_immed * 4;
 	}
 	else if (d->type == J)	
-		mips.pc = d->regs.j.target << 2;
+		mips.pc = d->regs.j.target << 2; // upper 4 bits will always be 0000
 
 }
 
