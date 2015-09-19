@@ -18,7 +18,6 @@ void PrintInstruction (DecodedInstr*);
 /*Globally accessible Computer variable*/
 Computer mips;
 RegVals rVals;
-Control brain;
 
 /*
  *  Return an initialized computer with the stack pointer set to the
@@ -228,9 +227,9 @@ void PrintInstruction ( DecodedInstr* d) {
     /* Your code goes here */	
 	char* i;
 	int rd, rs, rt, imm;
-	switch ((opcode)d->op) {
+	switch ((opcode)(d->op)) {
 		case 0:
-			switch ((funct)d->regs.r.funct) {
+			switch ((funct)(d->regs.r.funct)) {
 				case sll: // sll
 					i = "sll"; break;
 				case srl: // srl
@@ -297,11 +296,11 @@ void PrintInstruction ( DecodedInstr* d) {
 		else if (d->op == 0x23 || d->op == 0x2b)
 			printf("%s\t$%d, $%d($%d)\n", i, rt, rs, imm); // lw, sw
 		else if (d->op == 0x04 || d->op == 0x05)
-			printf("%s\t$%d, $%d, 0x%0.8x\n", i, rt, rs, mips.pc + imm * 4); // branch
+			printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + imm * 4); // branch
 	}
 	else if (d->type == J) {
 		imm = d->regs.j.target << 2; // upper 4 bits will always be 0000
-		printf("%s\t0x%0.8x\n", i, imm); // jump
+		printf("%s\t0x%.8x\n", i, imm); // jump
 	}
 }
 
@@ -389,7 +388,7 @@ int Mem( DecodedInstr* d, int val, int *changedMem) {
 		// Print specific error message
 		// Call exit(0);
 	if ((d->op == 0x23 || d->op == 0x2b) && ((d->regs.i.addr_or_immed < 0x00401000 || d->regs.i.addr_or_immed > 0x00403fff) || d->regs.i.addr_or_immed % 4 !=0)) {
-		printf("Memory Access Exception at 0x%0.8x: address 0x%0.8x", mips.pc, d->regs.i.addr_or_immed);
+		printf("Memory Access Exception at 0x%.8x: address 0x%.8x", mips.pc, d->regs.i.addr_or_immed);
 		exit(0);
 	}
 	*changedMem = -1;
