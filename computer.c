@@ -182,16 +182,15 @@ unsigned int Fetch ( int addr) {
 void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 		d->op = instr >> 26;
 		switch ((opcode)d->op) {
-			// Bitmask to get fields
 			case 0: // R-type:
 				// opcode	rs	rt	rd	shamt	funct
 				// 31-26	25-21	20-16	15-11	10-6	5-0	
 				d->type = R;
-				rVals->R_rs = mips.registers[d->regs.r.rs = (instr & 0x03E00000) >> 21];
-				rVals->R_rt = mips.registers[d->regs.r.rt = (instr & 0x001F0000) >> 16];
-				rVals->R_rd = mips.registers[d->regs.r.rd = (instr & 0x0000F800) >> 11];
-				d->regs.r.shamt = (instr & 0x000007C0) >> 6;
-				d->regs.r.funct = instr & 0x0000003F;
+				rVals->R_rs = mips.registers[d->regs.r.rs = (instr & 0x03e00000) >> 21];
+				rVals->R_rt = mips.registers[d->regs.r.rt = (instr & 0x001f0000) >> 16];
+				rVals->R_rd = mips.registers[d->regs.r.rd = (instr & 0x0000f800) >> 11];
+				d->regs.r.shamt = (instr & 0x000007c0) >> 6;
+				d->regs.r.funct = instr & 0x0000003f;
 				break;	
 			case j:
 			case jal:
@@ -199,15 +198,15 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				// opcode	addr
 				// 31-26	26-0
 				d->type = J;
-				d->regs.j.target = instr & 0x03FFFFFF;
+				d->regs.j.target = instr & 0x03ffffff;
 				break;
 			default:// I-type:
 				// opcode	rs	rt	imm
 				// 31-26	25-21	20-16	15-0
 				d->type = I;
-				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03E00000) >> 21];
-				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001F0000) >> 16];
-				d->regs.i.addr_or_immed = instr & 0x0000FFFF;
+				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03e00000) >> 21];
+				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001f0000) >> 16];
+				d->regs.i.addr_or_immed = instr & 0x0000ffff;
 				break;
 		}
 }
@@ -264,35 +263,37 @@ void PrintInstruction ( DecodedInstr* d) {
 		default:
 			exit(0); break;	
 	}
-	if (d->type == R) {
-		rd = d->regs.r.rd;
-		rs = d->regs.r.rs;
-		rt = d->regs.r.rt;
-		if ((funct)d->regs.r.funct == sll || (funct)d->regs.r.funct == srl) {
-			imm = d->regs.r.shamt;
-			printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // srl, sll (same as addiu)
-		}
-		else if ((funct)d->regs.r.funct == jr)
-			printf("%s \t$%d\n", i, rs); //jr
-		else
-			printf("%s\t$%d, $%d, $%d\n", i, rd, rs, rt); // general R-type
-	}
-	else if (d->type == I) {
-		rs = d->regs.i.rs;
-		rt = d->regs.i.rt;
-		imm = (short) d->regs.i.addr_or_immed;
-		if ((opcode)d->op == addiu)
-			printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // addiu (same as srl, sll)
-		else if ((opcode)d->op == andi || (opcode)d->op == ori || (opcode)d->op == lui)
-			printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, imm); // andi, ori, lui
-		else if ((opcode)d->op == lw || (opcode)d->op == sw)
-			printf("%s\t$%d, $%d($%d)\n", i, rt, rs, imm); // lw, sw
-		else if ((opcode)d->op == beq || (opcode)d->op == bne)
-			printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + imm * 4); // beq, bne
-	}
-	else if (d->type == J) {
-		imm = d->regs.j.target << 2; // upper 4 bits will always be 0000
-		printf("%s\t0x%.8x\n", i, imm); // j, jal
+	switch (d->type) {
+		case R:
+			rd = d->regs.r.rd;
+			rs = d->regs.r.rs;
+			rt = d->regs.r.rt;
+			if ((funct)d->regs.r.funct == sll || (funct)d->regs.r.funct == srl) {
+				imm = d->regs.r.shamt;
+				printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // srl, sll (same as addiu)
+			}
+			else if ((funct)d->regs.r.funct == jr)
+				printf("%s \t$%d\n", i, rs); //jr
+			else
+				printf("%s\t$%d, $%d, $%d\n", i, rd, rs, rt); // general R-type
+			break;
+		case I:
+			rs = d->regs.i.rs;
+			rt = d->regs.i.rt;
+			imm = (short) d->regs.i.addr_or_immed;
+			if ((opcode)d->op == addiu)
+				printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // addiu (same as srl, sll)
+			else if ((opcode)d->op == andi || (opcode)d->op == ori || (opcode)d->op == lui)
+				printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, imm); // andi, ori, lui
+			else if ((opcode)d->op == lw || (opcode)d->op == sw)
+				printf("%s\t$%d, $%d($%d)\n", i, rt, imm, rs); // lw, sw
+			else if ((opcode)d->op == beq || (opcode)d->op == bne)
+				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + imm * 4); // beq, bne
+			break;
+		case J:
+			imm = d->regs.j.target << 2; // upper 4 bits will always be 0000
+			printf("%s\t0x%.8x\n", i, imm); // j, jal
+			break;
 	}
 }
 
@@ -333,7 +334,7 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 		case ori:
 			return rVals->R_rs | d->regs.i.addr_or_immed;
 		case lui:
-			return rVals->R_rt & (d->regs.i.addr_or_immed << 16);
+			return (rVals->R_rt & 0x0000ffff) | (d->regs.i.addr_or_immed << 16);
 		case lw:
 		case sw:
 			return rVals->R_rs + d->regs.i.addr_or_immed;
@@ -378,10 +379,10 @@ int Mem( DecodedInstr* d, int val, int *changedMem) {
 	*changedMem = -1;
 	switch ((opcode)d->op) {
 		case lw:
-			return mips.memory[val / 4 - 0x00400000];
+			return mips.memory[(val - 0x00400000) >> 2];
 		case sw:
 			*changedMem = val;
-			mips.memory[val / 4 - 0x00400000] = mips.registers[d->regs.i.rt]; break;
+			mips.memory[(val - 0x00400000) >> 2] = mips.registers[d->regs.i.rt]; break;
 	}
 	return val;
 }
