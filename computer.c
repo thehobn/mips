@@ -186,15 +186,12 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 			case 0: // R-type:
 				// opcode	rs	rt	rd	shamt	funct
 				// 31-26	25-21	20-16	15-11	10-6	5-0	
-				d->type = R;	
-				d->regs.r.rs = (instr & 0x03E00000) >> 21;
-				d->regs.r.rt = (instr & 0x001F0000) >> 16;
-				d->regs.r.rd = (instr & 0x0000F800) >> 11;
+				d->type = R;
+				rVals->R_rs = mips.registers[d->regs.r.rs = (instr & 0x03E00000) >> 21];
+				rVals->R_rt = mips.registers[d->regs.r.rt = (instr & 0x001F0000) >> 16];
+				rVals->R_rd = mips.registers[d->regs.r.rd = (instr & 0x0000F800) >> 11];
 				d->regs.r.shamt = (instr & 0x000007C0) >> 6;
-				d->regs.r.funct = instr & 0x0000003F;		
-				rVals->R_rs = mips.registers[d->regs.r.rs];
-				rVals->R_rt = mips.registers[d->regs.r.rt];
-				rVals->R_rd = mips.registers[d->regs.r.rd];
+				d->regs.r.funct = instr & 0x0000003F;
 				break;	
 			case j:
 			case jal:
@@ -208,11 +205,9 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				// opcode	rs	rt	imm
 				// 31-26	25-21	20-16	15-0
 				d->type = I;
-				d->regs.i.rs = (instr & 0x03E00000) >> 21;
-				d->regs.i.rt = (instr & 0x001F0000) >> 16;
+				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03E00000) >> 21];
+				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001F0000) >> 16];
 				d->regs.i.addr_or_immed = instr & 0x0000FFFF;
-				rVals->R_rs = mips.registers[d->regs.i.rs];
-				rVals->R_rt = mips.registers[d->regs.i.rt];
 				break;
 		}
 }
@@ -293,7 +288,7 @@ void PrintInstruction ( DecodedInstr* d) {
 		else if ((opcode)d->op == lw || (opcode)d->op == sw)
 			printf("%s\t$%d, $%d($%d)\n", i, rt, rs, imm); // lw, sw
 		else if ((opcode)d->op == beq || (opcode)d->op == bne)
-			printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + imm * 4); // beq, bne
+			printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + imm * 4); // beq, bne
 	}
 	else if (d->type == J) {
 		imm = d->regs.j.target << 2; // upper 4 bits will always be 0000
@@ -353,9 +348,9 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
  */
 void UpdatePC ( DecodedInstr* d, int val) {
     mips.pc += 4;
-	if (d->type == R && d->regs.r.funct == 0x08)
+	if (d->type == R && (funct)d->regs.r.funct == jr)
 		mips.pc = mips.registers[d->regs.r.rs];
-	else if (d->op == 0x04 || d->op == 0x05) {
+	else if ((opcode)d->op == beq || (opcode)d->op == bne) {
 		if (val)
 			mips.pc += d->regs.i.addr_or_immed * 4;
 	}
