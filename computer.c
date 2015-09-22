@@ -280,15 +280,15 @@ void PrintInstruction ( DecodedInstr* d) {
 		case I:
 			rs = d->regs.i.rs;
 			rt = d->regs.i.rt;
-			imm = (short) d->regs.i.addr_or_immed;
+			imm = d->regs.i.addr_or_immed;
 			if ((opcode)d->op == addiu)
-				printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // addiu (same as srl, sll)
+				printf("%s\t$%d, $%d, %d\n", i, rt, rs, (short)imm); // addiu (same as srl, sll)
 			else if ((opcode)d->op == andi || (opcode)d->op == ori || (opcode)d->op == lui)
 				printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, imm); // andi, ori, lui
 			else if ((opcode)d->op == lw || (opcode)d->op == sw)
-				printf("%s\t$%d, $%d($%d)\n", i, rt, imm, rs); // lw, sw
+				printf("%s\t$%d, $%d($%d)\n", i, rt, (short)imm, rs); // lw, sw
 			else if ((opcode)d->op == beq || (opcode)d->op == bne)
-				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + imm << 2); // beq, bne
+				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + (short)(imm << 2)); // beq, bne
 			break;
 		case J:
 			imm = d->regs.j.target << 2; // upper 4 bits will always be 0000
@@ -337,7 +337,7 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 			return (rVals->R_rt & 0x0000ffff) | (d->regs.i.addr_or_immed << 16);
 		case lw:
 		case sw:
-			return rVals->R_rs + d->regs.i.addr_or_immed;
+			return rVals->R_rs + (short)d->regs.i.addr_or_immed;
 	}
   return 0;
 }
@@ -353,7 +353,7 @@ void UpdatePC ( DecodedInstr* d, int val) {
 		mips.pc = mips.registers[d->regs.r.rs];
 	else if ((opcode)d->op == beq || (opcode)d->op == bne) {
 		if (val)
-			mips.pc += d->regs.i.addr_or_immed << 2;
+			mips.pc += (short) d->regs.i.addr_or_immed << 2;
 	}
 	else if (d->type == J)	
 		mips.pc = d->regs.j.target << 2; // upper 4 bits will always be 0000
