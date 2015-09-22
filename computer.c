@@ -236,9 +236,9 @@ void PrintInstruction ( DecodedInstr* d) {
 				case or:
 					i = "or"; break;
 				case slt:
-					i = "slt";
+					i = "slt"; break;
 				default:
-					exit(0);
+					exit(1);
 			} break;
 		case j:
 			i = "j"; break;
@@ -261,7 +261,7 @@ void PrintInstruction ( DecodedInstr* d) {
 		case sw:
 			i = "sw"; break;
 		default:
-			exit(0); break;	
+			exit(1);
 	}
 	switch (d->type) {
 		case R:
@@ -288,7 +288,7 @@ void PrintInstruction ( DecodedInstr* d) {
 			else if ((opcode)d->op == lw || (opcode)d->op == sw)
 				printf("%s\t$%d, $%d($%d)\n", i, rt, imm, rs); // lw, sw
 			else if ((opcode)d->op == beq || (opcode)d->op == bne)
-				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + imm * 4); // beq, bne
+				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + imm << 2); // beq, bne
 			break;
 		case J:
 			imm = d->regs.j.target << 2; // upper 4 bits will always be 0000
@@ -353,11 +353,10 @@ void UpdatePC ( DecodedInstr* d, int val) {
 		mips.pc = mips.registers[d->regs.r.rs];
 	else if ((opcode)d->op == beq || (opcode)d->op == bne) {
 		if (val)
-			mips.pc += d->regs.i.addr_or_immed * 4;
+			mips.pc += d->regs.i.addr_or_immed << 2;
 	}
 	else if (d->type == J)	
 		mips.pc = d->regs.j.target << 2; // upper 4 bits will always be 0000
-
 }
 
 /*
@@ -374,15 +373,14 @@ int Mem( DecodedInstr* d, int val, int *changedMem) {
 	if (((opcode)d->op == lw || (opcode)d->op == sw) && 
 	 (val < 0x00401000 || val > 0x00403fff || val % 4 !=0)) {
 		printf("Memory Access Exception at 0x%.8x: address 0x%.8x", mips.pc, val);
-		exit(0);
+		exit(2);
 	}
 	*changedMem = -1;
 	switch ((opcode)d->op) {
 		case lw:
 			return mips.memory[(val - 0x00400000) >> 2];
 		case sw:
-			*changedMem = val;
-			mips.memory[(val - 0x00400000) >> 2] = mips.registers[d->regs.i.rt]; break;
+			mips.memory[((*changedMem = val) - 0x00400000) >> 2] = mips.registers[d->regs.i.rt]; break;
 	}
 	return val;
 }
