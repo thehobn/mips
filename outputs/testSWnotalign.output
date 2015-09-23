@@ -3,11 +3,11 @@ lui	$9, $0, 0x40
 New pc = 00400004
 Updated r09 to 00400000
 No memory location was updated.
-Executing instruction at 00400004: 24091000
-addiu	$9, $0, 4096
+Executing instruction at 00400004: 25291000
+addiu	$9, $9, 4096
 New pc = 00400008
-Updated r09 to 00001000
+Updated r09 to 00401000
 No memory location was updated.
 Executing instruction at 00400008: ad310001
 sw	$17, 1($9)
-Memory Access Exception at 0x00400008: address 0x00001001
+Memory Access Exception at 0x00400008: address 0x00401001
