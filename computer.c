@@ -209,8 +209,11 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				d->regs.i.addr_or_immed = instr & 0x0000ffff;
 			case addiu:
 			case lw:
-			case sw
-				d->regs.i.addr_or_immed = (short)(instr & 0x0000ffff); break;
+			case sw:	
+				d->type = I;
+				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03e00000) >> 21];
+				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001f0000) >> 16];
+				d->regs.i.addr_or_immed = (short)(instr & 0x0000ffff);
 		}
 }
 
