@@ -291,7 +291,7 @@ void PrintInstruction ( DecodedInstr* d) {
 				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + (short)(imm << 2)); // beq, bne
 			break;
 		case J:
-			imm = d->regs.j.target << 2; // upper 4 bits will always be 0000
+			imm = (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff);
 			printf("%s\t0x%.8x\n", i, imm); // j, jal
 			break;
 	}
@@ -356,7 +356,7 @@ void UpdatePC ( DecodedInstr* d, int val) {
 			mips.pc += (short) d->regs.i.addr_or_immed << 2;
 	}
 	else if (d->type == J)	
-		mips.pc = d->regs.j.target << 2; // upper 4 bits will always be 0000
+		mips.pc = (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff);
 	if(mips.pc > 0x00401000)
 		exit(3);
 }
