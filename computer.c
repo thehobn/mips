@@ -279,7 +279,7 @@ void PrintInstruction ( DecodedInstr* d) {
 				printf("%s\t$%d, $%d, %d\n", i, rd, rt, imm); // srl, sll (same as addiu)
 			}
 			else if ((funct)d->regs.r.funct == jr)
-				printf("%s \t$%d\n", i, rs); //jr
+				printf("%s\t$%d\n", i, rs); //jr
 			else
 				printf("%s\t$%d, $%d, $%d\n", i, rd, rs, rt); // general R-type
 			break;
