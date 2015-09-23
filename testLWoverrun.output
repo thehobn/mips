@@ -1,0 +1,13 @@
+Executing instruction at 00400000: 3c080040
+lui	$8, $0, 0x40
+New pc = 00400004
+Updated r08 to 00400000
+No memory location was updated.
+Executing instruction at 00400004: 24083ffc
+addiu	$8, $0, 16380
+New pc = 00400008
+Updated r08 to 00003ffc
+No memory location was updated.
+Executing instruction at 00400008: 8d110004
+lw	$17, 4($8)
+Memory Access Exception at 0x00400008: address 0x00004000
