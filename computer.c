@@ -206,10 +206,10 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				d->type = I;
 				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03e00000) >> 21];
 				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001f0000) >> 16];
-				d->regs.i.addr_or_immed = instr & 0x0000ffff;
+				d->regs.i.addr_or_immed = (unsigned short)(instr & 0x0000ffff);
 			case addiu:
 			case lw:
-			case sw:	
+			case sw:
 				d->type = I;
 				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03e00000) >> 21];
 				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001f0000) >> 16];
@@ -291,7 +291,7 @@ void PrintInstruction ( DecodedInstr* d) {
 			if ((opcode)d->op == addiu)
 				printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // addiu (same as srl, sll)
 			else if ((opcode)d->op == andi || (opcode)d->op == ori || (opcode)d->op == lui)
-				printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, imm); // andi, ori, lui
+				printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, (unsigned short)imm); // andi, ori, lui
 			else if ((opcode)d->op == lw || (opcode)d->op == sw)
 				printf("%s\t$%d, %d($%d)\n", i, rt, imm, rs); // lw, sw
 			else if ((opcode)d->op == beq || (opcode)d->op == bne)

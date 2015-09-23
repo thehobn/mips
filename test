@@ -1,6 +1,8 @@
 #!/bin/bash
 
-
+# Put all $TEST.dump files in ./dumps
+# Put all $TEST.output files in ./outputs
+# touch $TEST in ./tests to mark for testing
 
 TESTS="$(ls tests)"
 for TEST in $TESTS; do
@@ -8,6 +10,8 @@ for TEST in $TESTS; do
 	INTENDED_OUTPUT="$(cat outputs/$TEST.output)"
 	if [ "$PROGRAM_OUTPUT" != "$INTENDED_OUTPUT" ]; then
 		echo "Failed $TEST:"
-		printf "$(diff <(echo "$PROGRAM_OUTPUT") <(echo "$INTENDED_OUTPUT") | sed 's/^/\t/')"
+		printf "$(diff <(echo "$PROGRAM_OUTPUT") <(echo "$INTENDED_OUTPUT") | sed 's/^/\t/')"'\n'
+	else
+		echo "Passed $TEST."
 	fi
 done
