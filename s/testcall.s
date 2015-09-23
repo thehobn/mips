@@ -1,4 +1,4 @@
-# this will run a short test on all the assigned commands.
+# this will run a short test on the bulk the assigned commands.
 #
 
 addiu $t1, $0, 32	# put 32 in $t1 (0x20)
@@ -11,9 +11,8 @@ srl $t7, $t3, 3		# shift right by 3 the amount in $t3 and put in t7 (0x4)
 and $t8, $t4, $t5	# bitwise AND $t4 and $t5 put in t8 (0x2)
 andi $t9, $t4, 15	# bitwise AND $t4 and 15 (0xFFFF) put in t9 (0xA)
 
-or $t0, $t3, $t4	# bitwise OR $t3 and $t4 put in t0 (0x2E)
+or $t0, $t3, $t4	# bitwise OR $t3 and $t4 put in t0 (0x3E)
 ori $t1, $t3, 17	# bitwise OR $t3 and $t4 put in t1 (0x37)
-lui $t2, 22		# take 22 (0x16), shift left by 16 bits and store in $t2 (0x160000)  !!!!!!Problem - returns zero
-
+lui $t2, 22		# take 22 (0x16), shift left by 16 bits and store in $t2 (0x160000) 
 
 addi	$0,$0,0 #unsupported instruction, terminate
