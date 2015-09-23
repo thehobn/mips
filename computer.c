@@ -208,6 +208,8 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001f0000) >> 16];
 				d->regs.i.addr_or_immed = instr & 0x0000ffff;
 			case addiu:
+			case lw:
+			case sw
 				d->regs.i.addr_or_immed = (short)(instr & 0x0000ffff); break;
 		}
 }
@@ -283,13 +285,13 @@ void PrintInstruction ( DecodedInstr* d) {
 			rt = d->regs.i.rt;
 			imm = d->regs.i.addr_or_immed;
 			if ((opcode)d->op == addiu)
-				printf("%s\t$%d, $%d, %d\n", i, rt, rs, (short)imm); // addiu (same as srl, sll)
+				printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // addiu (same as srl, sll)
 			else if ((opcode)d->op == andi || (opcode)d->op == ori || (opcode)d->op == lui)
 				printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, imm); // andi, ori, lui
 			else if ((opcode)d->op == lw || (opcode)d->op == sw)
-				printf("%s\t$%d, %d($%d)\n", i, rt, (short)imm, rs); // lw, sw
+				printf("%s\t$%d, %d($%d)\n", i, rt, imm, rs); // lw, sw
 			else if ((opcode)d->op == beq || (opcode)d->op == bne)
-				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + (short)(imm << 2)); // beq, bne
+				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + (imm << 2)); // beq, bne
 			break;
 		case J:
 			imm = (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff);
