@@ -1,0 +1,3 @@
+slt
+beq
+bne
