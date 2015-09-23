@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+TESTS="$(ls tests)"
+for TEST in $TESTS; do
+	PROGRAM_OUTPUT="$(./sim dumps/$TEST.dump)"
+	INTENDED_OUTPUT="$(cat outputs/$TEST.output)"
+	if [ "$PROGRAM_OUTPUT" != "$INTENDED_OUTPUT" ]; then
+		echo "Failed $TEST:"
+		printf "$(diff <(echo "$PROGRAM_OUTPUT") <(echo "$INTENDED_OUTPUT") | sed 's/^/\t/')"
+	fi
+done

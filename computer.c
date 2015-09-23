@@ -223,7 +223,8 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
  */
 void PrintInstruction ( DecodedInstr* d) {
 	char* i;
-	int rd, rs, rt, imm;
+	int rd, rs, rt;
+	short imm;
 	switch ((opcode)(d->op)) {
 		case 0:
 			switch ((funct)(d->regs.r.funct)) {
@@ -297,8 +298,7 @@ void PrintInstruction ( DecodedInstr* d) {
 				printf("%s\t$%d, $%d, 0x%.8x\n", i, rs, rt, mips.pc + 4 + (imm << 2)); // beq, bne
 			break;
 		case J:
-			imm = (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff);
-			printf("%s\t0x%.8x\n", i, imm); // j, jal
+			printf("%s\t0x%.8x\n", i, (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff)); // j, jal
 			break;
 	}
 }
