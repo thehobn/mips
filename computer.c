@@ -305,7 +305,7 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 				case sll:
 					return rVals->R_rt << d->regs.r.shamt;
 				case srl:
-					return rVals->R_rt >> d->regs.r.shamt;
+					return (unsigned int)rVals->R_rt >> d->regs.r.shamt;
 				case jr:
 					return rVals->R_rs;
 				case addu:
