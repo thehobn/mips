@@ -334,7 +334,7 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 		case ori:
 			return rVals->R_rs | d->regs.i.addr_or_immed;
 		case lui:
-			return (rVals->R_rt & 0x0000ffff) | (d->regs.i.addr_or_immed << 16);
+			return d->regs.i.addr_or_immed << 16;
 		case lw:
 		case sw:
 			return rVals->R_rs + (short)d->regs.i.addr_or_immed;
