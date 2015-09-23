@@ -206,13 +206,6 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				d->type = I;
 				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03e00000) >> 21];
 				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001f0000) >> 16];
-				d->regs.i.addr_or_immed = (unsigned short)(instr & 0x0000ffff);
-			case addiu:
-			case lw:
-			case sw:
-				d->type = I;
-				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03e00000) >> 21];
-				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001f0000) >> 16];
 				d->regs.i.addr_or_immed = (short)(instr & 0x0000ffff);
 		}
 }
@@ -223,8 +216,6 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
  */
 void PrintInstruction ( DecodedInstr* d) {
 	char* i;
-	int rd, rs, rt;
-	short imm;
 	switch ((opcode)(d->op)) {
 		case 0:
 			switch ((funct)(d->regs.r.funct)) {
@@ -270,36 +261,39 @@ void PrintInstruction ( DecodedInstr* d) {
 		default:
 			exit(1);
 	}
+	int rd = d->regs.r.rd;
+	int rs = d->regs.r.rs;
+	int rt = d->regs.r.rt;
+	short imm = d->regs.i.addr_or_immed;
 	switch (d->type) {
 		case R:
-			rd = d->regs.r.rd;
-			rs = d->regs.r.rs;
-			rt = d->regs.r.rt;
-			if ((funct)d->regs.r.funct == sll || (funct)d->regs.r.funct == srl) {
-				imm = d->regs.r.shamt;
-				printf("%s\t$%d, $%d, %d\n", i, rd, rt, imm); // srl, sll (same as addiu)
+			switch ((funct)(d->regs.r.funct)) {
+				case sll:
+				case srl:
+					printf("%s\t$%d, $%d, %d\n", i, rd, rt, d->regs.r.shamt); return;
+				case jr:
+					printf("%s\t$%d\n", i, rs); return;
+				default:
+					printf("%s\t$%d, $%d, $%d\n", i, rd, rs, rt); return;
 			}
-			else if ((funct)d->regs.r.funct == jr)
-				printf("%s\t$%d\n", i, rs); //jr
-			else
-				printf("%s\t$%d, $%d, $%d\n", i, rd, rs, rt); // general R-type
-			break;
-		case I:
-			rs = d->regs.i.rs;
-			rt = d->regs.i.rt;
-			imm = d->regs.i.addr_or_immed;
-			if ((opcode)d->op == addiu)
-				printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // addiu (same as srl, sll)
-			else if ((opcode)d->op == andi || (opcode)d->op == ori || (opcode)d->op == lui)
-				printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, (unsigned short)imm); // andi, ori, lui
-			else if ((opcode)d->op == lw || (opcode)d->op == sw)
-				printf("%s\t$%d, %d($%d)\n", i, rt, imm, rs); // lw, sw
-			else if ((opcode)d->op == beq || (opcode)d->op == bne)
-				printf("%s\t$%d, $%d, 0x%.8x\n", i, rs, rt, mips.pc + 4 + (imm << 2)); // beq, bne
-			break;
 		case J:
-			printf("%s\t0x%.8x\n", i, (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff)); // j, jal
-			break;
+			printf("%s\t0x%.8x\n", i, (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff)); return;
+		case I:
+			switch ((opcode)(d->op)) {
+				case beq:
+				case bne:
+					printf("%s\t$%d, $%d, 0x%.8x\n", i, rs, rt, mips.pc + 4 + (imm << 2)); return;
+				case addiu:
+					printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); return;
+				case andi:
+				case ori:
+				case lui:
+					printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, (unsigned short)imm); return;
+				case lw:
+				case sw:
+					printf("%s\t$%d, %d($%d)\n", i, rt, imm, rs); return;
+			}
+
 	}
 }
 
