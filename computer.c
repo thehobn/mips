@@ -294,7 +294,7 @@ void PrintInstruction ( DecodedInstr* d) {
 			else if ((opcode)d->op == lw || (opcode)d->op == sw)
 				printf("%s\t$%d, %d($%d)\n", i, rt, imm, rs); // lw, sw
 			else if ((opcode)d->op == beq || (opcode)d->op == bne)
-				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + (imm << 2)); // beq, bne
+				printf("%s\t$%d, $%d, 0x%.8x\n", i, rs, rt, mips.pc + 4 + (imm << 2)); // beq, bne
 			break;
 		case J:
 			imm = (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff);
