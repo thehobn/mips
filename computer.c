@@ -270,7 +270,7 @@ void PrintInstruction ( DecodedInstr* d) {
 			rt = d->regs.r.rt;
 			if ((funct)d->regs.r.funct == sll || (funct)d->regs.r.funct == srl) {
 				imm = d->regs.r.shamt;
-				printf("%s\t$%d, $%d, %d\n", i, rt, rs, imm); // srl, sll (same as addiu)
+				printf("%s\t$%d, $%d, %d\n", i, rd, rt, imm); // srl, sll (same as addiu)
 			}
 			else if ((funct)d->regs.r.funct == jr)
 				printf("%s \t$%d\n", i, rs); //jr
@@ -286,7 +286,7 @@ void PrintInstruction ( DecodedInstr* d) {
 			else if ((opcode)d->op == andi || (opcode)d->op == ori || (opcode)d->op == lui)
 				printf("%s\t$%d, $%d, 0x%x\n", i, rt, rs, imm); // andi, ori, lui
 			else if ((opcode)d->op == lw || (opcode)d->op == sw)
-				printf("%s\t$%d, $%d($%d)\n", i, rt, (short)imm, rs); // lw, sw
+				printf("%s\t$%d, %d($%d)\n", i, rt, (short)imm, rs); // lw, sw
 			else if ((opcode)d->op == beq || (opcode)d->op == bne)
 				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + (short)(imm << 2)); // beq, bne
 			break;
@@ -357,6 +357,8 @@ void UpdatePC ( DecodedInstr* d, int val) {
 	}
 	else if (d->type == J)	
 		mips.pc = d->regs.j.target << 2; // upper 4 bits will always be 0000
+	if(mips.pc > 0x00401000)
+		exit(3);
 }
 
 /*

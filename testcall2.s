@@ -8,7 +8,7 @@ accumulate:
 addiu $t0, $t0, 1	# add 1 to $t0
 beq $t0, $t1, accumulate	# check if $t0 is equal to $t1, if so, go back !!!!!! Problem - segfault
 #bne $t0, $t2, accumulate	# check if $t0 is equal to $t2, if so, go back 
-addi	$0,$0,0 	# unsupported instruction, terminate
+#addi	$0,$0,0 	# unsupported instruction, terminate
 jal illbeback		# jump to the illbeback segment store return address in $31
 j finishup			# jump over the illbeback segment
 
@@ -27,6 +27,7 @@ sw $s0, 0($t0)		# store the contents of $s0 at the indicated mem location
 lw $s1, 0($t0)		# copy the word back from mem to $s1
 sw $s0, 0($t1)		# store the contents of $s0 at the indicated mem location
 lw $s1, 0($t1)		# copy the word back from mem to $s1
+addiu $t2, $0, 0x00404000
 
 
 addi	$0,$0,0 #unsupported instruction, terminate
