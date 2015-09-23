@@ -1,9 +1,10 @@
 # this will run a short test on all the assigned commands.
 #
 addiu $t0, $0, 0	# put 0 in $t0 (0x0)
-addiu $t1, $0, 1	# put 1 in $t1 (0x2)
+addiu $t1, $0, 1	# put 1 in $t1 (0x1)
 addiu $t2, $0, 3	# put 1 in $t2 (0x3)
-slt $t2, $t0, $t1	# check if $t0 is less than $t1, store result in $t2 (0x1)  !!!!!! Problem - terminates
+slt $t3, $t2, $t0	# check if $t0 is less than $t2, store result in $t2 (0x0) 
+slt $t3, $t0, $t2	# check if $t0 is less than $t2, store result in $t2 (0x1) 
 accumulate:
 addiu $t0, $t0, 1	# add 1 to $t0
 beq $t0, $t1, accumulate	# check if $t0 is equal to $t1, if so, go back !!!!!! Problem - segfault
