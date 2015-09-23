@@ -1,4 +1,3 @@
-
 #define MAXNUMINSTRS 1024	/* max # instrs in a program */
 #define MAXNUMDATA 3072		/* max # data words */
 

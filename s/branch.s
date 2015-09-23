@@ -1,3 +1,0 @@
-slt
-beq
-bne
