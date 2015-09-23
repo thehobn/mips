@@ -18,4 +18,19 @@ addiu	$8, $8, 12
 New pc = 00400010
 Updated r08 to 00000010
 No memory location was updated.
-Executing instruction at 00400010: 20000000
+Executing instruction at 00400010: 24090800
+addiu	$9, $0, 2048
+New pc = 00400014
+Updated r09 to 00000800
+No memory location was updated.
+Executing instruction at 00400014: 00094d00
+sll	$9, $9, 20
+New pc = 00400018
+Updated r09 to 80000000
+No memory location was updated.
+Executing instruction at 00400018: 2529ffff
+addiu	$9, $9, -1
+New pc = 0040001c
+Updated r09 to 7fffffff
+No memory location was updated.
+Executing instruction at 0040001c: 20000000
