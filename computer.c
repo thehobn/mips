@@ -374,7 +374,7 @@ void UpdatePC ( DecodedInstr* d, int val) {
 int Mem( DecodedInstr* d, int val, int *changedMem) {
 	if (((opcode)d->op == lw || (opcode)d->op == sw) && 
 	 (val < 0x00401000 || val > 0x00403fff || val % 4 !=0)) {
-		printf("Memory Access Exception at 0x%.8x: address 0x%.8x", mips.pc, val);
+		printf("Memory Access Exception at 0x%.8x: address 0x%.8x", mips.pc - 4, val);
 		exit(2);
 	}
 	*changedMem = -1;
