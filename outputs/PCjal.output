@@ -1,0 +1,4852 @@
+Executing instruction at 00400000: 3c010040
+lui	$1, $0, 0x40
+New pc = 00400004
+Updated r01 to 00400000
+No memory location was updated.
+Executing instruction at 00400004: 24210100
+addiu	$1, $1, 256
+New pc = 00400008
+Updated r01 to 00400100
+No memory location was updated.
+Executing instruction at 00400008: 00200008
+jr	$1
+New pc = 00400100
+No register was updated.
+No memory location was updated.
+Executing instruction at 00400100: 00000000
+sll	$0, $0, 0
+New pc = 00400104
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400104: 00000000
+sll	$0, $0, 0
+New pc = 00400108
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400108: 00000000
+sll	$0, $0, 0
+New pc = 0040010c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040010c: 00000000
+sll	$0, $0, 0
+New pc = 00400110
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400110: 00000000
+sll	$0, $0, 0
+New pc = 00400114
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400114: 00000000
+sll	$0, $0, 0
+New pc = 00400118
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400118: 00000000
+sll	$0, $0, 0
+New pc = 0040011c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040011c: 00000000
+sll	$0, $0, 0
+New pc = 00400120
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400120: 00000000
+sll	$0, $0, 0
+New pc = 00400124
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400124: 00000000
+sll	$0, $0, 0
+New pc = 00400128
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400128: 00000000
+sll	$0, $0, 0
+New pc = 0040012c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040012c: 00000000
+sll	$0, $0, 0
+New pc = 00400130
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400130: 00000000
+sll	$0, $0, 0
+New pc = 00400134
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400134: 00000000
+sll	$0, $0, 0
+New pc = 00400138
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400138: 00000000
+sll	$0, $0, 0
+New pc = 0040013c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040013c: 00000000
+sll	$0, $0, 0
+New pc = 00400140
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400140: 00000000
+sll	$0, $0, 0
+New pc = 00400144
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400144: 00000000
+sll	$0, $0, 0
+New pc = 00400148
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400148: 00000000
+sll	$0, $0, 0
+New pc = 0040014c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040014c: 00000000
+sll	$0, $0, 0
+New pc = 00400150
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400150: 00000000
+sll	$0, $0, 0
+New pc = 00400154
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400154: 00000000
+sll	$0, $0, 0
+New pc = 00400158
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400158: 00000000
+sll	$0, $0, 0
+New pc = 0040015c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040015c: 00000000
+sll	$0, $0, 0
+New pc = 00400160
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400160: 00000000
+sll	$0, $0, 0
+New pc = 00400164
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400164: 00000000
+sll	$0, $0, 0
+New pc = 00400168
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400168: 00000000
+sll	$0, $0, 0
+New pc = 0040016c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040016c: 00000000
+sll	$0, $0, 0
+New pc = 00400170
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400170: 00000000
+sll	$0, $0, 0
+New pc = 00400174
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400174: 00000000
+sll	$0, $0, 0
+New pc = 00400178
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400178: 00000000
+sll	$0, $0, 0
+New pc = 0040017c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040017c: 00000000
+sll	$0, $0, 0
+New pc = 00400180
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400180: 00000000
+sll	$0, $0, 0
+New pc = 00400184
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400184: 00000000
+sll	$0, $0, 0
+New pc = 00400188
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400188: 00000000
+sll	$0, $0, 0
+New pc = 0040018c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040018c: 00000000
+sll	$0, $0, 0
+New pc = 00400190
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400190: 00000000
+sll	$0, $0, 0
+New pc = 00400194
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400194: 00000000
+sll	$0, $0, 0
+New pc = 00400198
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400198: 00000000
+sll	$0, $0, 0
+New pc = 0040019c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040019c: 00000000
+sll	$0, $0, 0
+New pc = 004001a0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001a0: 00000000
+sll	$0, $0, 0
+New pc = 004001a4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001a4: 00000000
+sll	$0, $0, 0
+New pc = 004001a8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001a8: 00000000
+sll	$0, $0, 0
+New pc = 004001ac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001ac: 00000000
+sll	$0, $0, 0
+New pc = 004001b0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001b0: 00000000
+sll	$0, $0, 0
+New pc = 004001b4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001b4: 00000000
+sll	$0, $0, 0
+New pc = 004001b8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001b8: 00000000
+sll	$0, $0, 0
+New pc = 004001bc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001bc: 00000000
+sll	$0, $0, 0
+New pc = 004001c0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001c0: 00000000
+sll	$0, $0, 0
+New pc = 004001c4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001c4: 00000000
+sll	$0, $0, 0
+New pc = 004001c8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001c8: 00000000
+sll	$0, $0, 0
+New pc = 004001cc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001cc: 00000000
+sll	$0, $0, 0
+New pc = 004001d0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001d0: 00000000
+sll	$0, $0, 0
+New pc = 004001d4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001d4: 00000000
+sll	$0, $0, 0
+New pc = 004001d8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001d8: 00000000
+sll	$0, $0, 0
+New pc = 004001dc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001dc: 00000000
+sll	$0, $0, 0
+New pc = 004001e0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001e0: 00000000
+sll	$0, $0, 0
+New pc = 004001e4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001e4: 00000000
+sll	$0, $0, 0
+New pc = 004001e8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001e8: 00000000
+sll	$0, $0, 0
+New pc = 004001ec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001ec: 00000000
+sll	$0, $0, 0
+New pc = 004001f0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001f0: 00000000
+sll	$0, $0, 0
+New pc = 004001f4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001f4: 00000000
+sll	$0, $0, 0
+New pc = 004001f8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001f8: 00000000
+sll	$0, $0, 0
+New pc = 004001fc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004001fc: 00000000
+sll	$0, $0, 0
+New pc = 00400200
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400200: 00000000
+sll	$0, $0, 0
+New pc = 00400204
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400204: 00000000
+sll	$0, $0, 0
+New pc = 00400208
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400208: 00000000
+sll	$0, $0, 0
+New pc = 0040020c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040020c: 00000000
+sll	$0, $0, 0
+New pc = 00400210
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400210: 00000000
+sll	$0, $0, 0
+New pc = 00400214
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400214: 00000000
+sll	$0, $0, 0
+New pc = 00400218
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400218: 00000000
+sll	$0, $0, 0
+New pc = 0040021c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040021c: 00000000
+sll	$0, $0, 0
+New pc = 00400220
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400220: 00000000
+sll	$0, $0, 0
+New pc = 00400224
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400224: 00000000
+sll	$0, $0, 0
+New pc = 00400228
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400228: 00000000
+sll	$0, $0, 0
+New pc = 0040022c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040022c: 00000000
+sll	$0, $0, 0
+New pc = 00400230
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400230: 00000000
+sll	$0, $0, 0
+New pc = 00400234
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400234: 00000000
+sll	$0, $0, 0
+New pc = 00400238
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400238: 00000000
+sll	$0, $0, 0
+New pc = 0040023c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040023c: 00000000
+sll	$0, $0, 0
+New pc = 00400240
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400240: 00000000
+sll	$0, $0, 0
+New pc = 00400244
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400244: 00000000
+sll	$0, $0, 0
+New pc = 00400248
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400248: 00000000
+sll	$0, $0, 0
+New pc = 0040024c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040024c: 00000000
+sll	$0, $0, 0
+New pc = 00400250
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400250: 00000000
+sll	$0, $0, 0
+New pc = 00400254
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400254: 00000000
+sll	$0, $0, 0
+New pc = 00400258
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400258: 00000000
+sll	$0, $0, 0
+New pc = 0040025c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040025c: 00000000
+sll	$0, $0, 0
+New pc = 00400260
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400260: 00000000
+sll	$0, $0, 0
+New pc = 00400264
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400264: 00000000
+sll	$0, $0, 0
+New pc = 00400268
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400268: 00000000
+sll	$0, $0, 0
+New pc = 0040026c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040026c: 00000000
+sll	$0, $0, 0
+New pc = 00400270
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400270: 00000000
+sll	$0, $0, 0
+New pc = 00400274
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400274: 00000000
+sll	$0, $0, 0
+New pc = 00400278
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400278: 00000000
+sll	$0, $0, 0
+New pc = 0040027c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040027c: 00000000
+sll	$0, $0, 0
+New pc = 00400280
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400280: 00000000
+sll	$0, $0, 0
+New pc = 00400284
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400284: 00000000
+sll	$0, $0, 0
+New pc = 00400288
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400288: 00000000
+sll	$0, $0, 0
+New pc = 0040028c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040028c: 00000000
+sll	$0, $0, 0
+New pc = 00400290
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400290: 00000000
+sll	$0, $0, 0
+New pc = 00400294
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400294: 00000000
+sll	$0, $0, 0
+New pc = 00400298
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400298: 00000000
+sll	$0, $0, 0
+New pc = 0040029c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040029c: 00000000
+sll	$0, $0, 0
+New pc = 004002a0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002a0: 00000000
+sll	$0, $0, 0
+New pc = 004002a4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002a4: 00000000
+sll	$0, $0, 0
+New pc = 004002a8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002a8: 00000000
+sll	$0, $0, 0
+New pc = 004002ac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002ac: 00000000
+sll	$0, $0, 0
+New pc = 004002b0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002b0: 00000000
+sll	$0, $0, 0
+New pc = 004002b4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002b4: 00000000
+sll	$0, $0, 0
+New pc = 004002b8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002b8: 00000000
+sll	$0, $0, 0
+New pc = 004002bc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002bc: 00000000
+sll	$0, $0, 0
+New pc = 004002c0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002c0: 00000000
+sll	$0, $0, 0
+New pc = 004002c4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002c4: 00000000
+sll	$0, $0, 0
+New pc = 004002c8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002c8: 00000000
+sll	$0, $0, 0
+New pc = 004002cc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002cc: 00000000
+sll	$0, $0, 0
+New pc = 004002d0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002d0: 00000000
+sll	$0, $0, 0
+New pc = 004002d4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002d4: 00000000
+sll	$0, $0, 0
+New pc = 004002d8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002d8: 00000000
+sll	$0, $0, 0
+New pc = 004002dc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002dc: 00000000
+sll	$0, $0, 0
+New pc = 004002e0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002e0: 00000000
+sll	$0, $0, 0
+New pc = 004002e4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002e4: 00000000
+sll	$0, $0, 0
+New pc = 004002e8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002e8: 00000000
+sll	$0, $0, 0
+New pc = 004002ec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002ec: 00000000
+sll	$0, $0, 0
+New pc = 004002f0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002f0: 00000000
+sll	$0, $0, 0
+New pc = 004002f4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002f4: 00000000
+sll	$0, $0, 0
+New pc = 004002f8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002f8: 00000000
+sll	$0, $0, 0
+New pc = 004002fc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004002fc: 00000000
+sll	$0, $0, 0
+New pc = 00400300
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400300: 00000000
+sll	$0, $0, 0
+New pc = 00400304
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400304: 00000000
+sll	$0, $0, 0
+New pc = 00400308
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400308: 00000000
+sll	$0, $0, 0
+New pc = 0040030c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040030c: 00000000
+sll	$0, $0, 0
+New pc = 00400310
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400310: 00000000
+sll	$0, $0, 0
+New pc = 00400314
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400314: 00000000
+sll	$0, $0, 0
+New pc = 00400318
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400318: 00000000
+sll	$0, $0, 0
+New pc = 0040031c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040031c: 00000000
+sll	$0, $0, 0
+New pc = 00400320
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400320: 00000000
+sll	$0, $0, 0
+New pc = 00400324
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400324: 00000000
+sll	$0, $0, 0
+New pc = 00400328
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400328: 00000000
+sll	$0, $0, 0
+New pc = 0040032c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040032c: 00000000
+sll	$0, $0, 0
+New pc = 00400330
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400330: 00000000
+sll	$0, $0, 0
+New pc = 00400334
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400334: 00000000
+sll	$0, $0, 0
+New pc = 00400338
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400338: 00000000
+sll	$0, $0, 0
+New pc = 0040033c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040033c: 00000000
+sll	$0, $0, 0
+New pc = 00400340
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400340: 00000000
+sll	$0, $0, 0
+New pc = 00400344
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400344: 00000000
+sll	$0, $0, 0
+New pc = 00400348
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400348: 00000000
+sll	$0, $0, 0
+New pc = 0040034c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040034c: 00000000
+sll	$0, $0, 0
+New pc = 00400350
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400350: 00000000
+sll	$0, $0, 0
+New pc = 00400354
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400354: 00000000
+sll	$0, $0, 0
+New pc = 00400358
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400358: 00000000
+sll	$0, $0, 0
+New pc = 0040035c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040035c: 00000000
+sll	$0, $0, 0
+New pc = 00400360
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400360: 00000000
+sll	$0, $0, 0
+New pc = 00400364
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400364: 00000000
+sll	$0, $0, 0
+New pc = 00400368
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400368: 00000000
+sll	$0, $0, 0
+New pc = 0040036c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040036c: 00000000
+sll	$0, $0, 0
+New pc = 00400370
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400370: 00000000
+sll	$0, $0, 0
+New pc = 00400374
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400374: 00000000
+sll	$0, $0, 0
+New pc = 00400378
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400378: 00000000
+sll	$0, $0, 0
+New pc = 0040037c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040037c: 00000000
+sll	$0, $0, 0
+New pc = 00400380
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400380: 00000000
+sll	$0, $0, 0
+New pc = 00400384
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400384: 00000000
+sll	$0, $0, 0
+New pc = 00400388
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400388: 00000000
+sll	$0, $0, 0
+New pc = 0040038c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040038c: 00000000
+sll	$0, $0, 0
+New pc = 00400390
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400390: 00000000
+sll	$0, $0, 0
+New pc = 00400394
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400394: 00000000
+sll	$0, $0, 0
+New pc = 00400398
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400398: 00000000
+sll	$0, $0, 0
+New pc = 0040039c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040039c: 00000000
+sll	$0, $0, 0
+New pc = 004003a0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003a0: 00000000
+sll	$0, $0, 0
+New pc = 004003a4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003a4: 00000000
+sll	$0, $0, 0
+New pc = 004003a8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003a8: 00000000
+sll	$0, $0, 0
+New pc = 004003ac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003ac: 00000000
+sll	$0, $0, 0
+New pc = 004003b0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003b0: 00000000
+sll	$0, $0, 0
+New pc = 004003b4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003b4: 00000000
+sll	$0, $0, 0
+New pc = 004003b8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003b8: 00000000
+sll	$0, $0, 0
+New pc = 004003bc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003bc: 00000000
+sll	$0, $0, 0
+New pc = 004003c0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003c0: 00000000
+sll	$0, $0, 0
+New pc = 004003c4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003c4: 00000000
+sll	$0, $0, 0
+New pc = 004003c8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003c8: 00000000
+sll	$0, $0, 0
+New pc = 004003cc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003cc: 00000000
+sll	$0, $0, 0
+New pc = 004003d0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003d0: 00000000
+sll	$0, $0, 0
+New pc = 004003d4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003d4: 00000000
+sll	$0, $0, 0
+New pc = 004003d8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003d8: 00000000
+sll	$0, $0, 0
+New pc = 004003dc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003dc: 00000000
+sll	$0, $0, 0
+New pc = 004003e0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003e0: 00000000
+sll	$0, $0, 0
+New pc = 004003e4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003e4: 00000000
+sll	$0, $0, 0
+New pc = 004003e8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003e8: 00000000
+sll	$0, $0, 0
+New pc = 004003ec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003ec: 00000000
+sll	$0, $0, 0
+New pc = 004003f0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003f0: 00000000
+sll	$0, $0, 0
+New pc = 004003f4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003f4: 00000000
+sll	$0, $0, 0
+New pc = 004003f8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003f8: 00000000
+sll	$0, $0, 0
+New pc = 004003fc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004003fc: 00000000
+sll	$0, $0, 0
+New pc = 00400400
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400400: 00000000
+sll	$0, $0, 0
+New pc = 00400404
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400404: 00000000
+sll	$0, $0, 0
+New pc = 00400408
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400408: 00000000
+sll	$0, $0, 0
+New pc = 0040040c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040040c: 00000000
+sll	$0, $0, 0
+New pc = 00400410
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400410: 00000000
+sll	$0, $0, 0
+New pc = 00400414
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400414: 00000000
+sll	$0, $0, 0
+New pc = 00400418
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400418: 00000000
+sll	$0, $0, 0
+New pc = 0040041c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040041c: 00000000
+sll	$0, $0, 0
+New pc = 00400420
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400420: 00000000
+sll	$0, $0, 0
+New pc = 00400424
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400424: 00000000
+sll	$0, $0, 0
+New pc = 00400428
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400428: 00000000
+sll	$0, $0, 0
+New pc = 0040042c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040042c: 00000000
+sll	$0, $0, 0
+New pc = 00400430
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400430: 00000000
+sll	$0, $0, 0
+New pc = 00400434
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400434: 00000000
+sll	$0, $0, 0
+New pc = 00400438
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400438: 00000000
+sll	$0, $0, 0
+New pc = 0040043c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040043c: 00000000
+sll	$0, $0, 0
+New pc = 00400440
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400440: 00000000
+sll	$0, $0, 0
+New pc = 00400444
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400444: 00000000
+sll	$0, $0, 0
+New pc = 00400448
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400448: 00000000
+sll	$0, $0, 0
+New pc = 0040044c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040044c: 00000000
+sll	$0, $0, 0
+New pc = 00400450
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400450: 00000000
+sll	$0, $0, 0
+New pc = 00400454
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400454: 00000000
+sll	$0, $0, 0
+New pc = 00400458
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400458: 00000000
+sll	$0, $0, 0
+New pc = 0040045c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040045c: 00000000
+sll	$0, $0, 0
+New pc = 00400460
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400460: 00000000
+sll	$0, $0, 0
+New pc = 00400464
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400464: 00000000
+sll	$0, $0, 0
+New pc = 00400468
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400468: 00000000
+sll	$0, $0, 0
+New pc = 0040046c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040046c: 00000000
+sll	$0, $0, 0
+New pc = 00400470
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400470: 00000000
+sll	$0, $0, 0
+New pc = 00400474
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400474: 00000000
+sll	$0, $0, 0
+New pc = 00400478
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400478: 00000000
+sll	$0, $0, 0
+New pc = 0040047c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040047c: 00000000
+sll	$0, $0, 0
+New pc = 00400480
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400480: 00000000
+sll	$0, $0, 0
+New pc = 00400484
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400484: 00000000
+sll	$0, $0, 0
+New pc = 00400488
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400488: 00000000
+sll	$0, $0, 0
+New pc = 0040048c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040048c: 00000000
+sll	$0, $0, 0
+New pc = 00400490
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400490: 00000000
+sll	$0, $0, 0
+New pc = 00400494
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400494: 00000000
+sll	$0, $0, 0
+New pc = 00400498
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400498: 00000000
+sll	$0, $0, 0
+New pc = 0040049c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040049c: 00000000
+sll	$0, $0, 0
+New pc = 004004a0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004a0: 00000000
+sll	$0, $0, 0
+New pc = 004004a4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004a4: 00000000
+sll	$0, $0, 0
+New pc = 004004a8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004a8: 00000000
+sll	$0, $0, 0
+New pc = 004004ac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004ac: 00000000
+sll	$0, $0, 0
+New pc = 004004b0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004b0: 00000000
+sll	$0, $0, 0
+New pc = 004004b4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004b4: 00000000
+sll	$0, $0, 0
+New pc = 004004b8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004b8: 00000000
+sll	$0, $0, 0
+New pc = 004004bc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004bc: 00000000
+sll	$0, $0, 0
+New pc = 004004c0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004c0: 00000000
+sll	$0, $0, 0
+New pc = 004004c4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004c4: 00000000
+sll	$0, $0, 0
+New pc = 004004c8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004c8: 00000000
+sll	$0, $0, 0
+New pc = 004004cc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004cc: 00000000
+sll	$0, $0, 0
+New pc = 004004d0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004d0: 00000000
+sll	$0, $0, 0
+New pc = 004004d4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004d4: 00000000
+sll	$0, $0, 0
+New pc = 004004d8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004d8: 00000000
+sll	$0, $0, 0
+New pc = 004004dc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004dc: 00000000
+sll	$0, $0, 0
+New pc = 004004e0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004e0: 00000000
+sll	$0, $0, 0
+New pc = 004004e4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004e4: 00000000
+sll	$0, $0, 0
+New pc = 004004e8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004e8: 00000000
+sll	$0, $0, 0
+New pc = 004004ec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004ec: 00000000
+sll	$0, $0, 0
+New pc = 004004f0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004f0: 00000000
+sll	$0, $0, 0
+New pc = 004004f4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004f4: 00000000
+sll	$0, $0, 0
+New pc = 004004f8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004f8: 00000000
+sll	$0, $0, 0
+New pc = 004004fc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004004fc: 00000000
+sll	$0, $0, 0
+New pc = 00400500
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400500: 00000000
+sll	$0, $0, 0
+New pc = 00400504
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400504: 00000000
+sll	$0, $0, 0
+New pc = 00400508
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400508: 00000000
+sll	$0, $0, 0
+New pc = 0040050c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040050c: 00000000
+sll	$0, $0, 0
+New pc = 00400510
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400510: 00000000
+sll	$0, $0, 0
+New pc = 00400514
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400514: 00000000
+sll	$0, $0, 0
+New pc = 00400518
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400518: 00000000
+sll	$0, $0, 0
+New pc = 0040051c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040051c: 00000000
+sll	$0, $0, 0
+New pc = 00400520
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400520: 00000000
+sll	$0, $0, 0
+New pc = 00400524
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400524: 00000000
+sll	$0, $0, 0
+New pc = 00400528
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400528: 00000000
+sll	$0, $0, 0
+New pc = 0040052c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040052c: 00000000
+sll	$0, $0, 0
+New pc = 00400530
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400530: 00000000
+sll	$0, $0, 0
+New pc = 00400534
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400534: 00000000
+sll	$0, $0, 0
+New pc = 00400538
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400538: 00000000
+sll	$0, $0, 0
+New pc = 0040053c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040053c: 00000000
+sll	$0, $0, 0
+New pc = 00400540
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400540: 00000000
+sll	$0, $0, 0
+New pc = 00400544
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400544: 00000000
+sll	$0, $0, 0
+New pc = 00400548
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400548: 00000000
+sll	$0, $0, 0
+New pc = 0040054c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040054c: 00000000
+sll	$0, $0, 0
+New pc = 00400550
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400550: 00000000
+sll	$0, $0, 0
+New pc = 00400554
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400554: 00000000
+sll	$0, $0, 0
+New pc = 00400558
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400558: 00000000
+sll	$0, $0, 0
+New pc = 0040055c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040055c: 00000000
+sll	$0, $0, 0
+New pc = 00400560
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400560: 00000000
+sll	$0, $0, 0
+New pc = 00400564
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400564: 00000000
+sll	$0, $0, 0
+New pc = 00400568
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400568: 00000000
+sll	$0, $0, 0
+New pc = 0040056c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040056c: 00000000
+sll	$0, $0, 0
+New pc = 00400570
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400570: 00000000
+sll	$0, $0, 0
+New pc = 00400574
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400574: 00000000
+sll	$0, $0, 0
+New pc = 00400578
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400578: 00000000
+sll	$0, $0, 0
+New pc = 0040057c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040057c: 00000000
+sll	$0, $0, 0
+New pc = 00400580
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400580: 00000000
+sll	$0, $0, 0
+New pc = 00400584
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400584: 00000000
+sll	$0, $0, 0
+New pc = 00400588
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400588: 00000000
+sll	$0, $0, 0
+New pc = 0040058c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040058c: 00000000
+sll	$0, $0, 0
+New pc = 00400590
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400590: 00000000
+sll	$0, $0, 0
+New pc = 00400594
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400594: 00000000
+sll	$0, $0, 0
+New pc = 00400598
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400598: 00000000
+sll	$0, $0, 0
+New pc = 0040059c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040059c: 00000000
+sll	$0, $0, 0
+New pc = 004005a0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005a0: 00000000
+sll	$0, $0, 0
+New pc = 004005a4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005a4: 00000000
+sll	$0, $0, 0
+New pc = 004005a8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005a8: 00000000
+sll	$0, $0, 0
+New pc = 004005ac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005ac: 00000000
+sll	$0, $0, 0
+New pc = 004005b0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005b0: 00000000
+sll	$0, $0, 0
+New pc = 004005b4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005b4: 00000000
+sll	$0, $0, 0
+New pc = 004005b8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005b8: 00000000
+sll	$0, $0, 0
+New pc = 004005bc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005bc: 00000000
+sll	$0, $0, 0
+New pc = 004005c0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005c0: 00000000
+sll	$0, $0, 0
+New pc = 004005c4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005c4: 00000000
+sll	$0, $0, 0
+New pc = 004005c8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005c8: 00000000
+sll	$0, $0, 0
+New pc = 004005cc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005cc: 00000000
+sll	$0, $0, 0
+New pc = 004005d0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005d0: 00000000
+sll	$0, $0, 0
+New pc = 004005d4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005d4: 00000000
+sll	$0, $0, 0
+New pc = 004005d8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005d8: 00000000
+sll	$0, $0, 0
+New pc = 004005dc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005dc: 00000000
+sll	$0, $0, 0
+New pc = 004005e0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005e0: 00000000
+sll	$0, $0, 0
+New pc = 004005e4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005e4: 00000000
+sll	$0, $0, 0
+New pc = 004005e8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005e8: 00000000
+sll	$0, $0, 0
+New pc = 004005ec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005ec: 00000000
+sll	$0, $0, 0
+New pc = 004005f0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005f0: 00000000
+sll	$0, $0, 0
+New pc = 004005f4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005f4: 00000000
+sll	$0, $0, 0
+New pc = 004005f8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005f8: 00000000
+sll	$0, $0, 0
+New pc = 004005fc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004005fc: 00000000
+sll	$0, $0, 0
+New pc = 00400600
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400600: 00000000
+sll	$0, $0, 0
+New pc = 00400604
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400604: 00000000
+sll	$0, $0, 0
+New pc = 00400608
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400608: 00000000
+sll	$0, $0, 0
+New pc = 0040060c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040060c: 00000000
+sll	$0, $0, 0
+New pc = 00400610
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400610: 00000000
+sll	$0, $0, 0
+New pc = 00400614
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400614: 00000000
+sll	$0, $0, 0
+New pc = 00400618
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400618: 00000000
+sll	$0, $0, 0
+New pc = 0040061c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040061c: 00000000
+sll	$0, $0, 0
+New pc = 00400620
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400620: 00000000
+sll	$0, $0, 0
+New pc = 00400624
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400624: 00000000
+sll	$0, $0, 0
+New pc = 00400628
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400628: 00000000
+sll	$0, $0, 0
+New pc = 0040062c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040062c: 00000000
+sll	$0, $0, 0
+New pc = 00400630
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400630: 00000000
+sll	$0, $0, 0
+New pc = 00400634
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400634: 00000000
+sll	$0, $0, 0
+New pc = 00400638
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400638: 00000000
+sll	$0, $0, 0
+New pc = 0040063c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040063c: 00000000
+sll	$0, $0, 0
+New pc = 00400640
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400640: 00000000
+sll	$0, $0, 0
+New pc = 00400644
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400644: 00000000
+sll	$0, $0, 0
+New pc = 00400648
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400648: 00000000
+sll	$0, $0, 0
+New pc = 0040064c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040064c: 00000000
+sll	$0, $0, 0
+New pc = 00400650
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400650: 00000000
+sll	$0, $0, 0
+New pc = 00400654
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400654: 00000000
+sll	$0, $0, 0
+New pc = 00400658
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400658: 00000000
+sll	$0, $0, 0
+New pc = 0040065c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040065c: 00000000
+sll	$0, $0, 0
+New pc = 00400660
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400660: 00000000
+sll	$0, $0, 0
+New pc = 00400664
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400664: 00000000
+sll	$0, $0, 0
+New pc = 00400668
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400668: 00000000
+sll	$0, $0, 0
+New pc = 0040066c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040066c: 00000000
+sll	$0, $0, 0
+New pc = 00400670
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400670: 00000000
+sll	$0, $0, 0
+New pc = 00400674
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400674: 00000000
+sll	$0, $0, 0
+New pc = 00400678
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400678: 00000000
+sll	$0, $0, 0
+New pc = 0040067c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040067c: 00000000
+sll	$0, $0, 0
+New pc = 00400680
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400680: 00000000
+sll	$0, $0, 0
+New pc = 00400684
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400684: 00000000
+sll	$0, $0, 0
+New pc = 00400688
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400688: 00000000
+sll	$0, $0, 0
+New pc = 0040068c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040068c: 00000000
+sll	$0, $0, 0
+New pc = 00400690
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400690: 00000000
+sll	$0, $0, 0
+New pc = 00400694
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400694: 00000000
+sll	$0, $0, 0
+New pc = 00400698
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400698: 00000000
+sll	$0, $0, 0
+New pc = 0040069c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040069c: 00000000
+sll	$0, $0, 0
+New pc = 004006a0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006a0: 00000000
+sll	$0, $0, 0
+New pc = 004006a4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006a4: 00000000
+sll	$0, $0, 0
+New pc = 004006a8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006a8: 00000000
+sll	$0, $0, 0
+New pc = 004006ac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006ac: 00000000
+sll	$0, $0, 0
+New pc = 004006b0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006b0: 00000000
+sll	$0, $0, 0
+New pc = 004006b4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006b4: 00000000
+sll	$0, $0, 0
+New pc = 004006b8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006b8: 00000000
+sll	$0, $0, 0
+New pc = 004006bc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006bc: 00000000
+sll	$0, $0, 0
+New pc = 004006c0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006c0: 00000000
+sll	$0, $0, 0
+New pc = 004006c4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006c4: 00000000
+sll	$0, $0, 0
+New pc = 004006c8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006c8: 00000000
+sll	$0, $0, 0
+New pc = 004006cc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006cc: 00000000
+sll	$0, $0, 0
+New pc = 004006d0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006d0: 00000000
+sll	$0, $0, 0
+New pc = 004006d4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006d4: 00000000
+sll	$0, $0, 0
+New pc = 004006d8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006d8: 00000000
+sll	$0, $0, 0
+New pc = 004006dc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006dc: 00000000
+sll	$0, $0, 0
+New pc = 004006e0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006e0: 00000000
+sll	$0, $0, 0
+New pc = 004006e4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006e4: 00000000
+sll	$0, $0, 0
+New pc = 004006e8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006e8: 00000000
+sll	$0, $0, 0
+New pc = 004006ec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006ec: 00000000
+sll	$0, $0, 0
+New pc = 004006f0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006f0: 00000000
+sll	$0, $0, 0
+New pc = 004006f4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006f4: 00000000
+sll	$0, $0, 0
+New pc = 004006f8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006f8: 00000000
+sll	$0, $0, 0
+New pc = 004006fc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004006fc: 00000000
+sll	$0, $0, 0
+New pc = 00400700
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400700: 00000000
+sll	$0, $0, 0
+New pc = 00400704
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400704: 00000000
+sll	$0, $0, 0
+New pc = 00400708
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400708: 00000000
+sll	$0, $0, 0
+New pc = 0040070c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040070c: 00000000
+sll	$0, $0, 0
+New pc = 00400710
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400710: 00000000
+sll	$0, $0, 0
+New pc = 00400714
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400714: 00000000
+sll	$0, $0, 0
+New pc = 00400718
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400718: 00000000
+sll	$0, $0, 0
+New pc = 0040071c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040071c: 00000000
+sll	$0, $0, 0
+New pc = 00400720
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400720: 00000000
+sll	$0, $0, 0
+New pc = 00400724
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400724: 00000000
+sll	$0, $0, 0
+New pc = 00400728
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400728: 00000000
+sll	$0, $0, 0
+New pc = 0040072c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040072c: 00000000
+sll	$0, $0, 0
+New pc = 00400730
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400730: 00000000
+sll	$0, $0, 0
+New pc = 00400734
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400734: 00000000
+sll	$0, $0, 0
+New pc = 00400738
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400738: 00000000
+sll	$0, $0, 0
+New pc = 0040073c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040073c: 00000000
+sll	$0, $0, 0
+New pc = 00400740
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400740: 00000000
+sll	$0, $0, 0
+New pc = 00400744
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400744: 00000000
+sll	$0, $0, 0
+New pc = 00400748
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400748: 00000000
+sll	$0, $0, 0
+New pc = 0040074c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040074c: 00000000
+sll	$0, $0, 0
+New pc = 00400750
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400750: 00000000
+sll	$0, $0, 0
+New pc = 00400754
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400754: 00000000
+sll	$0, $0, 0
+New pc = 00400758
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400758: 00000000
+sll	$0, $0, 0
+New pc = 0040075c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040075c: 00000000
+sll	$0, $0, 0
+New pc = 00400760
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400760: 00000000
+sll	$0, $0, 0
+New pc = 00400764
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400764: 00000000
+sll	$0, $0, 0
+New pc = 00400768
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400768: 00000000
+sll	$0, $0, 0
+New pc = 0040076c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040076c: 00000000
+sll	$0, $0, 0
+New pc = 00400770
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400770: 00000000
+sll	$0, $0, 0
+New pc = 00400774
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400774: 00000000
+sll	$0, $0, 0
+New pc = 00400778
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400778: 00000000
+sll	$0, $0, 0
+New pc = 0040077c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040077c: 00000000
+sll	$0, $0, 0
+New pc = 00400780
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400780: 00000000
+sll	$0, $0, 0
+New pc = 00400784
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400784: 00000000
+sll	$0, $0, 0
+New pc = 00400788
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400788: 00000000
+sll	$0, $0, 0
+New pc = 0040078c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040078c: 00000000
+sll	$0, $0, 0
+New pc = 00400790
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400790: 00000000
+sll	$0, $0, 0
+New pc = 00400794
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400794: 00000000
+sll	$0, $0, 0
+New pc = 00400798
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400798: 00000000
+sll	$0, $0, 0
+New pc = 0040079c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040079c: 00000000
+sll	$0, $0, 0
+New pc = 004007a0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007a0: 00000000
+sll	$0, $0, 0
+New pc = 004007a4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007a4: 00000000
+sll	$0, $0, 0
+New pc = 004007a8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007a8: 00000000
+sll	$0, $0, 0
+New pc = 004007ac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007ac: 00000000
+sll	$0, $0, 0
+New pc = 004007b0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007b0: 00000000
+sll	$0, $0, 0
+New pc = 004007b4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007b4: 00000000
+sll	$0, $0, 0
+New pc = 004007b8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007b8: 00000000
+sll	$0, $0, 0
+New pc = 004007bc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007bc: 00000000
+sll	$0, $0, 0
+New pc = 004007c0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007c0: 00000000
+sll	$0, $0, 0
+New pc = 004007c4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007c4: 00000000
+sll	$0, $0, 0
+New pc = 004007c8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007c8: 00000000
+sll	$0, $0, 0
+New pc = 004007cc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007cc: 00000000
+sll	$0, $0, 0
+New pc = 004007d0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007d0: 00000000
+sll	$0, $0, 0
+New pc = 004007d4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007d4: 00000000
+sll	$0, $0, 0
+New pc = 004007d8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007d8: 00000000
+sll	$0, $0, 0
+New pc = 004007dc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007dc: 00000000
+sll	$0, $0, 0
+New pc = 004007e0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007e0: 00000000
+sll	$0, $0, 0
+New pc = 004007e4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007e4: 00000000
+sll	$0, $0, 0
+New pc = 004007e8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007e8: 00000000
+sll	$0, $0, 0
+New pc = 004007ec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007ec: 00000000
+sll	$0, $0, 0
+New pc = 004007f0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007f0: 00000000
+sll	$0, $0, 0
+New pc = 004007f4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007f4: 00000000
+sll	$0, $0, 0
+New pc = 004007f8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007f8: 00000000
+sll	$0, $0, 0
+New pc = 004007fc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004007fc: 00000000
+sll	$0, $0, 0
+New pc = 00400800
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400800: 00000000
+sll	$0, $0, 0
+New pc = 00400804
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400804: 00000000
+sll	$0, $0, 0
+New pc = 00400808
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400808: 00000000
+sll	$0, $0, 0
+New pc = 0040080c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040080c: 00000000
+sll	$0, $0, 0
+New pc = 00400810
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400810: 00000000
+sll	$0, $0, 0
+New pc = 00400814
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400814: 00000000
+sll	$0, $0, 0
+New pc = 00400818
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400818: 00000000
+sll	$0, $0, 0
+New pc = 0040081c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040081c: 00000000
+sll	$0, $0, 0
+New pc = 00400820
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400820: 00000000
+sll	$0, $0, 0
+New pc = 00400824
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400824: 00000000
+sll	$0, $0, 0
+New pc = 00400828
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400828: 00000000
+sll	$0, $0, 0
+New pc = 0040082c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040082c: 00000000
+sll	$0, $0, 0
+New pc = 00400830
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400830: 00000000
+sll	$0, $0, 0
+New pc = 00400834
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400834: 00000000
+sll	$0, $0, 0
+New pc = 00400838
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400838: 00000000
+sll	$0, $0, 0
+New pc = 0040083c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040083c: 00000000
+sll	$0, $0, 0
+New pc = 00400840
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400840: 00000000
+sll	$0, $0, 0
+New pc = 00400844
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400844: 00000000
+sll	$0, $0, 0
+New pc = 00400848
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400848: 00000000
+sll	$0, $0, 0
+New pc = 0040084c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040084c: 00000000
+sll	$0, $0, 0
+New pc = 00400850
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400850: 00000000
+sll	$0, $0, 0
+New pc = 00400854
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400854: 00000000
+sll	$0, $0, 0
+New pc = 00400858
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400858: 00000000
+sll	$0, $0, 0
+New pc = 0040085c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040085c: 00000000
+sll	$0, $0, 0
+New pc = 00400860
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400860: 00000000
+sll	$0, $0, 0
+New pc = 00400864
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400864: 00000000
+sll	$0, $0, 0
+New pc = 00400868
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400868: 00000000
+sll	$0, $0, 0
+New pc = 0040086c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040086c: 00000000
+sll	$0, $0, 0
+New pc = 00400870
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400870: 00000000
+sll	$0, $0, 0
+New pc = 00400874
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400874: 00000000
+sll	$0, $0, 0
+New pc = 00400878
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400878: 00000000
+sll	$0, $0, 0
+New pc = 0040087c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040087c: 00000000
+sll	$0, $0, 0
+New pc = 00400880
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400880: 00000000
+sll	$0, $0, 0
+New pc = 00400884
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400884: 00000000
+sll	$0, $0, 0
+New pc = 00400888
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400888: 00000000
+sll	$0, $0, 0
+New pc = 0040088c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040088c: 00000000
+sll	$0, $0, 0
+New pc = 00400890
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400890: 00000000
+sll	$0, $0, 0
+New pc = 00400894
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400894: 00000000
+sll	$0, $0, 0
+New pc = 00400898
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400898: 00000000
+sll	$0, $0, 0
+New pc = 0040089c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040089c: 00000000
+sll	$0, $0, 0
+New pc = 004008a0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008a0: 00000000
+sll	$0, $0, 0
+New pc = 004008a4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008a4: 00000000
+sll	$0, $0, 0
+New pc = 004008a8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008a8: 00000000
+sll	$0, $0, 0
+New pc = 004008ac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008ac: 00000000
+sll	$0, $0, 0
+New pc = 004008b0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008b0: 00000000
+sll	$0, $0, 0
+New pc = 004008b4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008b4: 00000000
+sll	$0, $0, 0
+New pc = 004008b8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008b8: 00000000
+sll	$0, $0, 0
+New pc = 004008bc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008bc: 00000000
+sll	$0, $0, 0
+New pc = 004008c0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008c0: 00000000
+sll	$0, $0, 0
+New pc = 004008c4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008c4: 00000000
+sll	$0, $0, 0
+New pc = 004008c8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008c8: 00000000
+sll	$0, $0, 0
+New pc = 004008cc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008cc: 00000000
+sll	$0, $0, 0
+New pc = 004008d0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008d0: 00000000
+sll	$0, $0, 0
+New pc = 004008d4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008d4: 00000000
+sll	$0, $0, 0
+New pc = 004008d8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008d8: 00000000
+sll	$0, $0, 0
+New pc = 004008dc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008dc: 00000000
+sll	$0, $0, 0
+New pc = 004008e0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008e0: 00000000
+sll	$0, $0, 0
+New pc = 004008e4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008e4: 00000000
+sll	$0, $0, 0
+New pc = 004008e8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008e8: 00000000
+sll	$0, $0, 0
+New pc = 004008ec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008ec: 00000000
+sll	$0, $0, 0
+New pc = 004008f0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008f0: 00000000
+sll	$0, $0, 0
+New pc = 004008f4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008f4: 00000000
+sll	$0, $0, 0
+New pc = 004008f8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008f8: 00000000
+sll	$0, $0, 0
+New pc = 004008fc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004008fc: 00000000
+sll	$0, $0, 0
+New pc = 00400900
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400900: 00000000
+sll	$0, $0, 0
+New pc = 00400904
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400904: 00000000
+sll	$0, $0, 0
+New pc = 00400908
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400908: 00000000
+sll	$0, $0, 0
+New pc = 0040090c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040090c: 00000000
+sll	$0, $0, 0
+New pc = 00400910
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400910: 00000000
+sll	$0, $0, 0
+New pc = 00400914
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400914: 00000000
+sll	$0, $0, 0
+New pc = 00400918
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400918: 00000000
+sll	$0, $0, 0
+New pc = 0040091c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040091c: 00000000
+sll	$0, $0, 0
+New pc = 00400920
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400920: 00000000
+sll	$0, $0, 0
+New pc = 00400924
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400924: 00000000
+sll	$0, $0, 0
+New pc = 00400928
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400928: 00000000
+sll	$0, $0, 0
+New pc = 0040092c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040092c: 00000000
+sll	$0, $0, 0
+New pc = 00400930
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400930: 00000000
+sll	$0, $0, 0
+New pc = 00400934
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400934: 00000000
+sll	$0, $0, 0
+New pc = 00400938
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400938: 00000000
+sll	$0, $0, 0
+New pc = 0040093c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040093c: 00000000
+sll	$0, $0, 0
+New pc = 00400940
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400940: 00000000
+sll	$0, $0, 0
+New pc = 00400944
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400944: 00000000
+sll	$0, $0, 0
+New pc = 00400948
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400948: 00000000
+sll	$0, $0, 0
+New pc = 0040094c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040094c: 00000000
+sll	$0, $0, 0
+New pc = 00400950
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400950: 00000000
+sll	$0, $0, 0
+New pc = 00400954
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400954: 00000000
+sll	$0, $0, 0
+New pc = 00400958
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400958: 00000000
+sll	$0, $0, 0
+New pc = 0040095c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040095c: 00000000
+sll	$0, $0, 0
+New pc = 00400960
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400960: 00000000
+sll	$0, $0, 0
+New pc = 00400964
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400964: 00000000
+sll	$0, $0, 0
+New pc = 00400968
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400968: 00000000
+sll	$0, $0, 0
+New pc = 0040096c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040096c: 00000000
+sll	$0, $0, 0
+New pc = 00400970
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400970: 00000000
+sll	$0, $0, 0
+New pc = 00400974
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400974: 00000000
+sll	$0, $0, 0
+New pc = 00400978
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400978: 00000000
+sll	$0, $0, 0
+New pc = 0040097c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040097c: 00000000
+sll	$0, $0, 0
+New pc = 00400980
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400980: 00000000
+sll	$0, $0, 0
+New pc = 00400984
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400984: 00000000
+sll	$0, $0, 0
+New pc = 00400988
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400988: 00000000
+sll	$0, $0, 0
+New pc = 0040098c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040098c: 00000000
+sll	$0, $0, 0
+New pc = 00400990
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400990: 00000000
+sll	$0, $0, 0
+New pc = 00400994
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400994: 00000000
+sll	$0, $0, 0
+New pc = 00400998
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400998: 00000000
+sll	$0, $0, 0
+New pc = 0040099c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040099c: 00000000
+sll	$0, $0, 0
+New pc = 004009a0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009a0: 00000000
+sll	$0, $0, 0
+New pc = 004009a4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009a4: 00000000
+sll	$0, $0, 0
+New pc = 004009a8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009a8: 00000000
+sll	$0, $0, 0
+New pc = 004009ac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009ac: 00000000
+sll	$0, $0, 0
+New pc = 004009b0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009b0: 00000000
+sll	$0, $0, 0
+New pc = 004009b4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009b4: 00000000
+sll	$0, $0, 0
+New pc = 004009b8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009b8: 00000000
+sll	$0, $0, 0
+New pc = 004009bc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009bc: 00000000
+sll	$0, $0, 0
+New pc = 004009c0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009c0: 00000000
+sll	$0, $0, 0
+New pc = 004009c4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009c4: 00000000
+sll	$0, $0, 0
+New pc = 004009c8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009c8: 00000000
+sll	$0, $0, 0
+New pc = 004009cc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009cc: 00000000
+sll	$0, $0, 0
+New pc = 004009d0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009d0: 00000000
+sll	$0, $0, 0
+New pc = 004009d4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009d4: 00000000
+sll	$0, $0, 0
+New pc = 004009d8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009d8: 00000000
+sll	$0, $0, 0
+New pc = 004009dc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009dc: 00000000
+sll	$0, $0, 0
+New pc = 004009e0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009e0: 00000000
+sll	$0, $0, 0
+New pc = 004009e4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009e4: 00000000
+sll	$0, $0, 0
+New pc = 004009e8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009e8: 00000000
+sll	$0, $0, 0
+New pc = 004009ec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009ec: 00000000
+sll	$0, $0, 0
+New pc = 004009f0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009f0: 00000000
+sll	$0, $0, 0
+New pc = 004009f4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009f4: 00000000
+sll	$0, $0, 0
+New pc = 004009f8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009f8: 00000000
+sll	$0, $0, 0
+New pc = 004009fc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 004009fc: 00000000
+sll	$0, $0, 0
+New pc = 00400a00
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a00: 00000000
+sll	$0, $0, 0
+New pc = 00400a04
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a04: 00000000
+sll	$0, $0, 0
+New pc = 00400a08
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a08: 00000000
+sll	$0, $0, 0
+New pc = 00400a0c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a0c: 00000000
+sll	$0, $0, 0
+New pc = 00400a10
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a10: 00000000
+sll	$0, $0, 0
+New pc = 00400a14
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a14: 00000000
+sll	$0, $0, 0
+New pc = 00400a18
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a18: 00000000
+sll	$0, $0, 0
+New pc = 00400a1c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a1c: 00000000
+sll	$0, $0, 0
+New pc = 00400a20
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a20: 00000000
+sll	$0, $0, 0
+New pc = 00400a24
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a24: 00000000
+sll	$0, $0, 0
+New pc = 00400a28
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a28: 00000000
+sll	$0, $0, 0
+New pc = 00400a2c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a2c: 00000000
+sll	$0, $0, 0
+New pc = 00400a30
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a30: 00000000
+sll	$0, $0, 0
+New pc = 00400a34
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a34: 00000000
+sll	$0, $0, 0
+New pc = 00400a38
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a38: 00000000
+sll	$0, $0, 0
+New pc = 00400a3c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a3c: 00000000
+sll	$0, $0, 0
+New pc = 00400a40
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a40: 00000000
+sll	$0, $0, 0
+New pc = 00400a44
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a44: 00000000
+sll	$0, $0, 0
+New pc = 00400a48
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a48: 00000000
+sll	$0, $0, 0
+New pc = 00400a4c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a4c: 00000000
+sll	$0, $0, 0
+New pc = 00400a50
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a50: 00000000
+sll	$0, $0, 0
+New pc = 00400a54
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a54: 00000000
+sll	$0, $0, 0
+New pc = 00400a58
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a58: 00000000
+sll	$0, $0, 0
+New pc = 00400a5c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a5c: 00000000
+sll	$0, $0, 0
+New pc = 00400a60
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a60: 00000000
+sll	$0, $0, 0
+New pc = 00400a64
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a64: 00000000
+sll	$0, $0, 0
+New pc = 00400a68
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a68: 00000000
+sll	$0, $0, 0
+New pc = 00400a6c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a6c: 00000000
+sll	$0, $0, 0
+New pc = 00400a70
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a70: 00000000
+sll	$0, $0, 0
+New pc = 00400a74
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a74: 00000000
+sll	$0, $0, 0
+New pc = 00400a78
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a78: 00000000
+sll	$0, $0, 0
+New pc = 00400a7c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a7c: 00000000
+sll	$0, $0, 0
+New pc = 00400a80
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a80: 00000000
+sll	$0, $0, 0
+New pc = 00400a84
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a84: 00000000
+sll	$0, $0, 0
+New pc = 00400a88
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a88: 00000000
+sll	$0, $0, 0
+New pc = 00400a8c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a8c: 00000000
+sll	$0, $0, 0
+New pc = 00400a90
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a90: 00000000
+sll	$0, $0, 0
+New pc = 00400a94
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a94: 00000000
+sll	$0, $0, 0
+New pc = 00400a98
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a98: 00000000
+sll	$0, $0, 0
+New pc = 00400a9c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400a9c: 00000000
+sll	$0, $0, 0
+New pc = 00400aa0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400aa0: 00000000
+sll	$0, $0, 0
+New pc = 00400aa4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400aa4: 00000000
+sll	$0, $0, 0
+New pc = 00400aa8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400aa8: 00000000
+sll	$0, $0, 0
+New pc = 00400aac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400aac: 00000000
+sll	$0, $0, 0
+New pc = 00400ab0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ab0: 00000000
+sll	$0, $0, 0
+New pc = 00400ab4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ab4: 00000000
+sll	$0, $0, 0
+New pc = 00400ab8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ab8: 00000000
+sll	$0, $0, 0
+New pc = 00400abc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400abc: 00000000
+sll	$0, $0, 0
+New pc = 00400ac0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ac0: 00000000
+sll	$0, $0, 0
+New pc = 00400ac4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ac4: 00000000
+sll	$0, $0, 0
+New pc = 00400ac8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ac8: 00000000
+sll	$0, $0, 0
+New pc = 00400acc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400acc: 00000000
+sll	$0, $0, 0
+New pc = 00400ad0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ad0: 00000000
+sll	$0, $0, 0
+New pc = 00400ad4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ad4: 00000000
+sll	$0, $0, 0
+New pc = 00400ad8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ad8: 00000000
+sll	$0, $0, 0
+New pc = 00400adc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400adc: 00000000
+sll	$0, $0, 0
+New pc = 00400ae0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ae0: 00000000
+sll	$0, $0, 0
+New pc = 00400ae4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ae4: 00000000
+sll	$0, $0, 0
+New pc = 00400ae8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ae8: 00000000
+sll	$0, $0, 0
+New pc = 00400aec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400aec: 00000000
+sll	$0, $0, 0
+New pc = 00400af0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400af0: 00000000
+sll	$0, $0, 0
+New pc = 00400af4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400af4: 00000000
+sll	$0, $0, 0
+New pc = 00400af8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400af8: 00000000
+sll	$0, $0, 0
+New pc = 00400afc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400afc: 00000000
+sll	$0, $0, 0
+New pc = 00400b00
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b00: 00000000
+sll	$0, $0, 0
+New pc = 00400b04
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b04: 00000000
+sll	$0, $0, 0
+New pc = 00400b08
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b08: 00000000
+sll	$0, $0, 0
+New pc = 00400b0c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b0c: 00000000
+sll	$0, $0, 0
+New pc = 00400b10
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b10: 00000000
+sll	$0, $0, 0
+New pc = 00400b14
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b14: 00000000
+sll	$0, $0, 0
+New pc = 00400b18
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b18: 00000000
+sll	$0, $0, 0
+New pc = 00400b1c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b1c: 00000000
+sll	$0, $0, 0
+New pc = 00400b20
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b20: 00000000
+sll	$0, $0, 0
+New pc = 00400b24
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b24: 00000000
+sll	$0, $0, 0
+New pc = 00400b28
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b28: 00000000
+sll	$0, $0, 0
+New pc = 00400b2c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b2c: 00000000
+sll	$0, $0, 0
+New pc = 00400b30
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b30: 00000000
+sll	$0, $0, 0
+New pc = 00400b34
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b34: 00000000
+sll	$0, $0, 0
+New pc = 00400b38
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b38: 00000000
+sll	$0, $0, 0
+New pc = 00400b3c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b3c: 00000000
+sll	$0, $0, 0
+New pc = 00400b40
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b40: 00000000
+sll	$0, $0, 0
+New pc = 00400b44
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b44: 00000000
+sll	$0, $0, 0
+New pc = 00400b48
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b48: 00000000
+sll	$0, $0, 0
+New pc = 00400b4c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b4c: 00000000
+sll	$0, $0, 0
+New pc = 00400b50
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b50: 00000000
+sll	$0, $0, 0
+New pc = 00400b54
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b54: 00000000
+sll	$0, $0, 0
+New pc = 00400b58
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b58: 00000000
+sll	$0, $0, 0
+New pc = 00400b5c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b5c: 00000000
+sll	$0, $0, 0
+New pc = 00400b60
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b60: 00000000
+sll	$0, $0, 0
+New pc = 00400b64
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b64: 00000000
+sll	$0, $0, 0
+New pc = 00400b68
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b68: 00000000
+sll	$0, $0, 0
+New pc = 00400b6c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b6c: 00000000
+sll	$0, $0, 0
+New pc = 00400b70
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b70: 00000000
+sll	$0, $0, 0
+New pc = 00400b74
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b74: 00000000
+sll	$0, $0, 0
+New pc = 00400b78
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b78: 00000000
+sll	$0, $0, 0
+New pc = 00400b7c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b7c: 00000000
+sll	$0, $0, 0
+New pc = 00400b80
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b80: 00000000
+sll	$0, $0, 0
+New pc = 00400b84
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b84: 00000000
+sll	$0, $0, 0
+New pc = 00400b88
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b88: 00000000
+sll	$0, $0, 0
+New pc = 00400b8c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b8c: 00000000
+sll	$0, $0, 0
+New pc = 00400b90
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b90: 00000000
+sll	$0, $0, 0
+New pc = 00400b94
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b94: 00000000
+sll	$0, $0, 0
+New pc = 00400b98
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b98: 00000000
+sll	$0, $0, 0
+New pc = 00400b9c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400b9c: 00000000
+sll	$0, $0, 0
+New pc = 00400ba0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ba0: 00000000
+sll	$0, $0, 0
+New pc = 00400ba4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ba4: 00000000
+sll	$0, $0, 0
+New pc = 00400ba8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ba8: 00000000
+sll	$0, $0, 0
+New pc = 00400bac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bac: 00000000
+sll	$0, $0, 0
+New pc = 00400bb0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bb0: 00000000
+sll	$0, $0, 0
+New pc = 00400bb4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bb4: 00000000
+sll	$0, $0, 0
+New pc = 00400bb8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bb8: 00000000
+sll	$0, $0, 0
+New pc = 00400bbc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bbc: 00000000
+sll	$0, $0, 0
+New pc = 00400bc0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bc0: 00000000
+sll	$0, $0, 0
+New pc = 00400bc4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bc4: 00000000
+sll	$0, $0, 0
+New pc = 00400bc8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bc8: 00000000
+sll	$0, $0, 0
+New pc = 00400bcc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bcc: 00000000
+sll	$0, $0, 0
+New pc = 00400bd0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bd0: 00000000
+sll	$0, $0, 0
+New pc = 00400bd4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bd4: 00000000
+sll	$0, $0, 0
+New pc = 00400bd8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bd8: 00000000
+sll	$0, $0, 0
+New pc = 00400bdc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bdc: 00000000
+sll	$0, $0, 0
+New pc = 00400be0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400be0: 00000000
+sll	$0, $0, 0
+New pc = 00400be4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400be4: 00000000
+sll	$0, $0, 0
+New pc = 00400be8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400be8: 00000000
+sll	$0, $0, 0
+New pc = 00400bec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bec: 00000000
+sll	$0, $0, 0
+New pc = 00400bf0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bf0: 00000000
+sll	$0, $0, 0
+New pc = 00400bf4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bf4: 00000000
+sll	$0, $0, 0
+New pc = 00400bf8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bf8: 00000000
+sll	$0, $0, 0
+New pc = 00400bfc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400bfc: 00000000
+sll	$0, $0, 0
+New pc = 00400c00
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c00: 00000000
+sll	$0, $0, 0
+New pc = 00400c04
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c04: 00000000
+sll	$0, $0, 0
+New pc = 00400c08
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c08: 00000000
+sll	$0, $0, 0
+New pc = 00400c0c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c0c: 00000000
+sll	$0, $0, 0
+New pc = 00400c10
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c10: 00000000
+sll	$0, $0, 0
+New pc = 00400c14
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c14: 00000000
+sll	$0, $0, 0
+New pc = 00400c18
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c18: 00000000
+sll	$0, $0, 0
+New pc = 00400c1c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c1c: 00000000
+sll	$0, $0, 0
+New pc = 00400c20
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c20: 00000000
+sll	$0, $0, 0
+New pc = 00400c24
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c24: 00000000
+sll	$0, $0, 0
+New pc = 00400c28
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c28: 00000000
+sll	$0, $0, 0
+New pc = 00400c2c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c2c: 00000000
+sll	$0, $0, 0
+New pc = 00400c30
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c30: 00000000
+sll	$0, $0, 0
+New pc = 00400c34
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c34: 00000000
+sll	$0, $0, 0
+New pc = 00400c38
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c38: 00000000
+sll	$0, $0, 0
+New pc = 00400c3c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c3c: 00000000
+sll	$0, $0, 0
+New pc = 00400c40
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c40: 00000000
+sll	$0, $0, 0
+New pc = 00400c44
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c44: 00000000
+sll	$0, $0, 0
+New pc = 00400c48
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c48: 00000000
+sll	$0, $0, 0
+New pc = 00400c4c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c4c: 00000000
+sll	$0, $0, 0
+New pc = 00400c50
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c50: 00000000
+sll	$0, $0, 0
+New pc = 00400c54
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c54: 00000000
+sll	$0, $0, 0
+New pc = 00400c58
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c58: 00000000
+sll	$0, $0, 0
+New pc = 00400c5c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c5c: 00000000
+sll	$0, $0, 0
+New pc = 00400c60
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c60: 00000000
+sll	$0, $0, 0
+New pc = 00400c64
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c64: 00000000
+sll	$0, $0, 0
+New pc = 00400c68
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c68: 00000000
+sll	$0, $0, 0
+New pc = 00400c6c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c6c: 00000000
+sll	$0, $0, 0
+New pc = 00400c70
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c70: 00000000
+sll	$0, $0, 0
+New pc = 00400c74
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c74: 00000000
+sll	$0, $0, 0
+New pc = 00400c78
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c78: 00000000
+sll	$0, $0, 0
+New pc = 00400c7c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c7c: 00000000
+sll	$0, $0, 0
+New pc = 00400c80
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c80: 00000000
+sll	$0, $0, 0
+New pc = 00400c84
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c84: 00000000
+sll	$0, $0, 0
+New pc = 00400c88
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c88: 00000000
+sll	$0, $0, 0
+New pc = 00400c8c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c8c: 00000000
+sll	$0, $0, 0
+New pc = 00400c90
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c90: 00000000
+sll	$0, $0, 0
+New pc = 00400c94
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c94: 00000000
+sll	$0, $0, 0
+New pc = 00400c98
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c98: 00000000
+sll	$0, $0, 0
+New pc = 00400c9c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400c9c: 00000000
+sll	$0, $0, 0
+New pc = 00400ca0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ca0: 00000000
+sll	$0, $0, 0
+New pc = 00400ca4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ca4: 00000000
+sll	$0, $0, 0
+New pc = 00400ca8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ca8: 00000000
+sll	$0, $0, 0
+New pc = 00400cac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cac: 00000000
+sll	$0, $0, 0
+New pc = 00400cb0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cb0: 00000000
+sll	$0, $0, 0
+New pc = 00400cb4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cb4: 00000000
+sll	$0, $0, 0
+New pc = 00400cb8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cb8: 00000000
+sll	$0, $0, 0
+New pc = 00400cbc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cbc: 00000000
+sll	$0, $0, 0
+New pc = 00400cc0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cc0: 00000000
+sll	$0, $0, 0
+New pc = 00400cc4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cc4: 00000000
+sll	$0, $0, 0
+New pc = 00400cc8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cc8: 00000000
+sll	$0, $0, 0
+New pc = 00400ccc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ccc: 00000000
+sll	$0, $0, 0
+New pc = 00400cd0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cd0: 00000000
+sll	$0, $0, 0
+New pc = 00400cd4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cd4: 00000000
+sll	$0, $0, 0
+New pc = 00400cd8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cd8: 00000000
+sll	$0, $0, 0
+New pc = 00400cdc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cdc: 00000000
+sll	$0, $0, 0
+New pc = 00400ce0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ce0: 00000000
+sll	$0, $0, 0
+New pc = 00400ce4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ce4: 00000000
+sll	$0, $0, 0
+New pc = 00400ce8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ce8: 00000000
+sll	$0, $0, 0
+New pc = 00400cec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cec: 00000000
+sll	$0, $0, 0
+New pc = 00400cf0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cf0: 00000000
+sll	$0, $0, 0
+New pc = 00400cf4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cf4: 00000000
+sll	$0, $0, 0
+New pc = 00400cf8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cf8: 00000000
+sll	$0, $0, 0
+New pc = 00400cfc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400cfc: 00000000
+sll	$0, $0, 0
+New pc = 00400d00
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d00: 00000000
+sll	$0, $0, 0
+New pc = 00400d04
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d04: 00000000
+sll	$0, $0, 0
+New pc = 00400d08
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d08: 00000000
+sll	$0, $0, 0
+New pc = 00400d0c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d0c: 00000000
+sll	$0, $0, 0
+New pc = 00400d10
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d10: 00000000
+sll	$0, $0, 0
+New pc = 00400d14
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d14: 00000000
+sll	$0, $0, 0
+New pc = 00400d18
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d18: 00000000
+sll	$0, $0, 0
+New pc = 00400d1c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d1c: 00000000
+sll	$0, $0, 0
+New pc = 00400d20
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d20: 00000000
+sll	$0, $0, 0
+New pc = 00400d24
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d24: 00000000
+sll	$0, $0, 0
+New pc = 00400d28
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d28: 00000000
+sll	$0, $0, 0
+New pc = 00400d2c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d2c: 00000000
+sll	$0, $0, 0
+New pc = 00400d30
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d30: 00000000
+sll	$0, $0, 0
+New pc = 00400d34
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d34: 00000000
+sll	$0, $0, 0
+New pc = 00400d38
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d38: 00000000
+sll	$0, $0, 0
+New pc = 00400d3c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d3c: 00000000
+sll	$0, $0, 0
+New pc = 00400d40
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d40: 00000000
+sll	$0, $0, 0
+New pc = 00400d44
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d44: 00000000
+sll	$0, $0, 0
+New pc = 00400d48
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d48: 00000000
+sll	$0, $0, 0
+New pc = 00400d4c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d4c: 00000000
+sll	$0, $0, 0
+New pc = 00400d50
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d50: 00000000
+sll	$0, $0, 0
+New pc = 00400d54
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d54: 00000000
+sll	$0, $0, 0
+New pc = 00400d58
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d58: 00000000
+sll	$0, $0, 0
+New pc = 00400d5c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d5c: 00000000
+sll	$0, $0, 0
+New pc = 00400d60
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d60: 00000000
+sll	$0, $0, 0
+New pc = 00400d64
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d64: 00000000
+sll	$0, $0, 0
+New pc = 00400d68
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d68: 00000000
+sll	$0, $0, 0
+New pc = 00400d6c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d6c: 00000000
+sll	$0, $0, 0
+New pc = 00400d70
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d70: 00000000
+sll	$0, $0, 0
+New pc = 00400d74
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d74: 00000000
+sll	$0, $0, 0
+New pc = 00400d78
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d78: 00000000
+sll	$0, $0, 0
+New pc = 00400d7c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d7c: 00000000
+sll	$0, $0, 0
+New pc = 00400d80
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d80: 00000000
+sll	$0, $0, 0
+New pc = 00400d84
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d84: 00000000
+sll	$0, $0, 0
+New pc = 00400d88
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d88: 00000000
+sll	$0, $0, 0
+New pc = 00400d8c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d8c: 00000000
+sll	$0, $0, 0
+New pc = 00400d90
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d90: 00000000
+sll	$0, $0, 0
+New pc = 00400d94
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d94: 00000000
+sll	$0, $0, 0
+New pc = 00400d98
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d98: 00000000
+sll	$0, $0, 0
+New pc = 00400d9c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400d9c: 00000000
+sll	$0, $0, 0
+New pc = 00400da0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400da0: 00000000
+sll	$0, $0, 0
+New pc = 00400da4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400da4: 00000000
+sll	$0, $0, 0
+New pc = 00400da8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400da8: 00000000
+sll	$0, $0, 0
+New pc = 00400dac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dac: 00000000
+sll	$0, $0, 0
+New pc = 00400db0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400db0: 00000000
+sll	$0, $0, 0
+New pc = 00400db4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400db4: 00000000
+sll	$0, $0, 0
+New pc = 00400db8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400db8: 00000000
+sll	$0, $0, 0
+New pc = 00400dbc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dbc: 00000000
+sll	$0, $0, 0
+New pc = 00400dc0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dc0: 00000000
+sll	$0, $0, 0
+New pc = 00400dc4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dc4: 00000000
+sll	$0, $0, 0
+New pc = 00400dc8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dc8: 00000000
+sll	$0, $0, 0
+New pc = 00400dcc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dcc: 00000000
+sll	$0, $0, 0
+New pc = 00400dd0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dd0: 00000000
+sll	$0, $0, 0
+New pc = 00400dd4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dd4: 00000000
+sll	$0, $0, 0
+New pc = 00400dd8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dd8: 00000000
+sll	$0, $0, 0
+New pc = 00400ddc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ddc: 00000000
+sll	$0, $0, 0
+New pc = 00400de0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400de0: 00000000
+sll	$0, $0, 0
+New pc = 00400de4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400de4: 00000000
+sll	$0, $0, 0
+New pc = 00400de8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400de8: 00000000
+sll	$0, $0, 0
+New pc = 00400dec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dec: 00000000
+sll	$0, $0, 0
+New pc = 00400df0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400df0: 00000000
+sll	$0, $0, 0
+New pc = 00400df4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400df4: 00000000
+sll	$0, $0, 0
+New pc = 00400df8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400df8: 00000000
+sll	$0, $0, 0
+New pc = 00400dfc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400dfc: 00000000
+sll	$0, $0, 0
+New pc = 00400e00
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e00: 00000000
+sll	$0, $0, 0
+New pc = 00400e04
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e04: 00000000
+sll	$0, $0, 0
+New pc = 00400e08
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e08: 00000000
+sll	$0, $0, 0
+New pc = 00400e0c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e0c: 00000000
+sll	$0, $0, 0
+New pc = 00400e10
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e10: 00000000
+sll	$0, $0, 0
+New pc = 00400e14
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e14: 00000000
+sll	$0, $0, 0
+New pc = 00400e18
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e18: 00000000
+sll	$0, $0, 0
+New pc = 00400e1c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e1c: 00000000
+sll	$0, $0, 0
+New pc = 00400e20
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e20: 00000000
+sll	$0, $0, 0
+New pc = 00400e24
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e24: 00000000
+sll	$0, $0, 0
+New pc = 00400e28
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e28: 00000000
+sll	$0, $0, 0
+New pc = 00400e2c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e2c: 00000000
+sll	$0, $0, 0
+New pc = 00400e30
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e30: 00000000
+sll	$0, $0, 0
+New pc = 00400e34
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e34: 00000000
+sll	$0, $0, 0
+New pc = 00400e38
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e38: 00000000
+sll	$0, $0, 0
+New pc = 00400e3c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e3c: 00000000
+sll	$0, $0, 0
+New pc = 00400e40
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e40: 00000000
+sll	$0, $0, 0
+New pc = 00400e44
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e44: 00000000
+sll	$0, $0, 0
+New pc = 00400e48
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e48: 00000000
+sll	$0, $0, 0
+New pc = 00400e4c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e4c: 00000000
+sll	$0, $0, 0
+New pc = 00400e50
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e50: 00000000
+sll	$0, $0, 0
+New pc = 00400e54
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e54: 00000000
+sll	$0, $0, 0
+New pc = 00400e58
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e58: 00000000
+sll	$0, $0, 0
+New pc = 00400e5c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e5c: 00000000
+sll	$0, $0, 0
+New pc = 00400e60
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e60: 00000000
+sll	$0, $0, 0
+New pc = 00400e64
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e64: 00000000
+sll	$0, $0, 0
+New pc = 00400e68
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e68: 00000000
+sll	$0, $0, 0
+New pc = 00400e6c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e6c: 00000000
+sll	$0, $0, 0
+New pc = 00400e70
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e70: 00000000
+sll	$0, $0, 0
+New pc = 00400e74
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e74: 00000000
+sll	$0, $0, 0
+New pc = 00400e78
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e78: 00000000
+sll	$0, $0, 0
+New pc = 00400e7c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e7c: 00000000
+sll	$0, $0, 0
+New pc = 00400e80
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e80: 00000000
+sll	$0, $0, 0
+New pc = 00400e84
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e84: 00000000
+sll	$0, $0, 0
+New pc = 00400e88
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e88: 00000000
+sll	$0, $0, 0
+New pc = 00400e8c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e8c: 00000000
+sll	$0, $0, 0
+New pc = 00400e90
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e90: 00000000
+sll	$0, $0, 0
+New pc = 00400e94
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e94: 00000000
+sll	$0, $0, 0
+New pc = 00400e98
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e98: 00000000
+sll	$0, $0, 0
+New pc = 00400e9c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400e9c: 00000000
+sll	$0, $0, 0
+New pc = 00400ea0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ea0: 00000000
+sll	$0, $0, 0
+New pc = 00400ea4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ea4: 00000000
+sll	$0, $0, 0
+New pc = 00400ea8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ea8: 00000000
+sll	$0, $0, 0
+New pc = 00400eac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400eac: 00000000
+sll	$0, $0, 0
+New pc = 00400eb0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400eb0: 00000000
+sll	$0, $0, 0
+New pc = 00400eb4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400eb4: 00000000
+sll	$0, $0, 0
+New pc = 00400eb8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400eb8: 00000000
+sll	$0, $0, 0
+New pc = 00400ebc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ebc: 00000000
+sll	$0, $0, 0
+New pc = 00400ec0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ec0: 00000000
+sll	$0, $0, 0
+New pc = 00400ec4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ec4: 00000000
+sll	$0, $0, 0
+New pc = 00400ec8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ec8: 00000000
+sll	$0, $0, 0
+New pc = 00400ecc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ecc: 00000000
+sll	$0, $0, 0
+New pc = 00400ed0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ed0: 00000000
+sll	$0, $0, 0
+New pc = 00400ed4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ed4: 00000000
+sll	$0, $0, 0
+New pc = 00400ed8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ed8: 00000000
+sll	$0, $0, 0
+New pc = 00400edc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400edc: 00000000
+sll	$0, $0, 0
+New pc = 00400ee0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ee0: 00000000
+sll	$0, $0, 0
+New pc = 00400ee4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ee4: 00000000
+sll	$0, $0, 0
+New pc = 00400ee8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ee8: 00000000
+sll	$0, $0, 0
+New pc = 00400eec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400eec: 00000000
+sll	$0, $0, 0
+New pc = 00400ef0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ef0: 00000000
+sll	$0, $0, 0
+New pc = 00400ef4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ef4: 00000000
+sll	$0, $0, 0
+New pc = 00400ef8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ef8: 00000000
+sll	$0, $0, 0
+New pc = 00400efc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400efc: 00000000
+sll	$0, $0, 0
+New pc = 00400f00
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f00: 00000000
+sll	$0, $0, 0
+New pc = 00400f04
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f04: 00000000
+sll	$0, $0, 0
+New pc = 00400f08
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f08: 00000000
+sll	$0, $0, 0
+New pc = 00400f0c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f0c: 00000000
+sll	$0, $0, 0
+New pc = 00400f10
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f10: 00000000
+sll	$0, $0, 0
+New pc = 00400f14
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f14: 00000000
+sll	$0, $0, 0
+New pc = 00400f18
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f18: 00000000
+sll	$0, $0, 0
+New pc = 00400f1c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f1c: 00000000
+sll	$0, $0, 0
+New pc = 00400f20
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f20: 00000000
+sll	$0, $0, 0
+New pc = 00400f24
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f24: 00000000
+sll	$0, $0, 0
+New pc = 00400f28
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f28: 00000000
+sll	$0, $0, 0
+New pc = 00400f2c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f2c: 00000000
+sll	$0, $0, 0
+New pc = 00400f30
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f30: 00000000
+sll	$0, $0, 0
+New pc = 00400f34
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f34: 00000000
+sll	$0, $0, 0
+New pc = 00400f38
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f38: 00000000
+sll	$0, $0, 0
+New pc = 00400f3c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f3c: 00000000
+sll	$0, $0, 0
+New pc = 00400f40
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f40: 00000000
+sll	$0, $0, 0
+New pc = 00400f44
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f44: 00000000
+sll	$0, $0, 0
+New pc = 00400f48
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f48: 00000000
+sll	$0, $0, 0
+New pc = 00400f4c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f4c: 00000000
+sll	$0, $0, 0
+New pc = 00400f50
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f50: 00000000
+sll	$0, $0, 0
+New pc = 00400f54
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f54: 00000000
+sll	$0, $0, 0
+New pc = 00400f58
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f58: 00000000
+sll	$0, $0, 0
+New pc = 00400f5c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f5c: 00000000
+sll	$0, $0, 0
+New pc = 00400f60
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f60: 00000000
+sll	$0, $0, 0
+New pc = 00400f64
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f64: 00000000
+sll	$0, $0, 0
+New pc = 00400f68
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f68: 00000000
+sll	$0, $0, 0
+New pc = 00400f6c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f6c: 00000000
+sll	$0, $0, 0
+New pc = 00400f70
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f70: 00000000
+sll	$0, $0, 0
+New pc = 00400f74
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f74: 00000000
+sll	$0, $0, 0
+New pc = 00400f78
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f78: 00000000
+sll	$0, $0, 0
+New pc = 00400f7c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f7c: 00000000
+sll	$0, $0, 0
+New pc = 00400f80
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f80: 00000000
+sll	$0, $0, 0
+New pc = 00400f84
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f84: 00000000
+sll	$0, $0, 0
+New pc = 00400f88
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f88: 00000000
+sll	$0, $0, 0
+New pc = 00400f8c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f8c: 00000000
+sll	$0, $0, 0
+New pc = 00400f90
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f90: 00000000
+sll	$0, $0, 0
+New pc = 00400f94
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f94: 00000000
+sll	$0, $0, 0
+New pc = 00400f98
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f98: 00000000
+sll	$0, $0, 0
+New pc = 00400f9c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400f9c: 00000000
+sll	$0, $0, 0
+New pc = 00400fa0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fa0: 00000000
+sll	$0, $0, 0
+New pc = 00400fa4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fa4: 00000000
+sll	$0, $0, 0
+New pc = 00400fa8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fa8: 00000000
+sll	$0, $0, 0
+New pc = 00400fac
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fac: 00000000
+sll	$0, $0, 0
+New pc = 00400fb0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fb0: 00000000
+sll	$0, $0, 0
+New pc = 00400fb4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fb4: 00000000
+sll	$0, $0, 0
+New pc = 00400fb8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fb8: 00000000
+sll	$0, $0, 0
+New pc = 00400fbc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fbc: 00000000
+sll	$0, $0, 0
+New pc = 00400fc0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fc0: 00000000
+sll	$0, $0, 0
+New pc = 00400fc4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fc4: 00000000
+sll	$0, $0, 0
+New pc = 00400fc8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fc8: 00000000
+sll	$0, $0, 0
+New pc = 00400fcc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fcc: 00000000
+sll	$0, $0, 0
+New pc = 00400fd0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fd0: 00000000
+sll	$0, $0, 0
+New pc = 00400fd4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fd4: 00000000
+sll	$0, $0, 0
+New pc = 00400fd8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fd8: 00000000
+sll	$0, $0, 0
+New pc = 00400fdc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fdc: 00000000
+sll	$0, $0, 0
+New pc = 00400fe0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fe0: 00000000
+sll	$0, $0, 0
+New pc = 00400fe4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fe4: 00000000
+sll	$0, $0, 0
+New pc = 00400fe8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fe8: 00000000
+sll	$0, $0, 0
+New pc = 00400fec
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400fec: 00000000
+sll	$0, $0, 0
+New pc = 00400ff0
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ff0: 00000000
+sll	$0, $0, 0
+New pc = 00400ff4
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ff4: 00000000
+sll	$0, $0, 0
+New pc = 00400ff8
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ff8: 00000000
+sll	$0, $0, 0
+New pc = 00400ffc
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400ffc: 0c100003
+jal	0x0040000c
+New pc = 0040000c
+Updated r31 to 00401000
+No memory location was updated.
+Executing instruction at 0040000c: 00000000
+sll	$0, $0, 0
+New pc = 00400010
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400010: 00000000
+sll	$0, $0, 0
+New pc = 00400014
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400014: 00000000
+sll	$0, $0, 0
+New pc = 00400018
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400018: 00000000
+sll	$0, $0, 0
+New pc = 0040001c
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 0040001c: 00000000
+sll	$0, $0, 0
+New pc = 00400020
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400020: 00000000
+sll	$0, $0, 0
+New pc = 00400024
+Updated r00 to 00000000
+No memory location was updated.
+Executing instruction at 00400024: 03e00008
+jr	$31
+New pc = 00401000
+No register was updated.
+No memory location was updated.
+Executing instruction at 00401000: 00000000
+sll	$0, $0, 0
