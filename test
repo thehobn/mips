@@ -4,6 +4,8 @@
 # Put all $TEST.output files in ./outputs
 # touch $TEST in ./tests to mark for testing
 
+# If output files are incorrect we still have some nice regression testing going on
+
 TESTS="$(ls tests)"
 for TEST in $TESTS; do
 	PROGRAM_OUTPUT="$(./sim dumps/$TEST.dump)"

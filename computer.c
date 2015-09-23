@@ -357,7 +357,7 @@ void UpdatePC ( DecodedInstr* d, int val) {
 	}
 	else if (d->type == J)	
 		mips.pc = (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff);
-	if(mips.pc > 0x00401000)
+	if(mips.pc < 0x00400000 || mips.pc > 0x00401000)
 		exit(3);
 }
 

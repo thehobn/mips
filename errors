@@ -1,0 +1,4 @@
+Error codes:
+	1: invalid instruction (no instruction for given opcode or funct)
+	2: memory access exception (not word aligned or outside 0x00401000 to 0x00404000)
+	3: program counter outside instruction memory (0x00400000 to 0x00401000)
