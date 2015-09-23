@@ -309,9 +309,9 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 				case jr:
 					return rVals->R_rs;
 				case addu:
-					return (short) rVals->R_rs + (short) rVals->R_rt;
+					return (int)rVals->R_rs + (int)rVals->R_rt;
 				case subu:
-					return (short) rVals->R_rs - (short)rVals->R_rt;
+					return (int)rVals->R_rs - (int)rVals->R_rt;
 				case and:
 					return rVals->R_rs & rVals->R_rt;
 				case or:
@@ -328,7 +328,7 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 		case bne:
 			return rVals->R_rs != rVals->R_rt;
 		case addiu:
-			return (short) rVals->R_rs + (short) d->regs.i.addr_or_immed;
+			return (int) rVals->R_rs + (short) d->regs.i.addr_or_immed;
 		case andi:
 			return rVals->R_rs & d->regs.i.addr_or_immed;
 		case ori:
