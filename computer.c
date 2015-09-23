@@ -207,7 +207,8 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03e00000) >> 21];
 				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001f0000) >> 16];
 				d->regs.i.addr_or_immed = instr & 0x0000ffff;
-				break;
+			case addiu:
+				d->regs.i.addr_or_immed = (short)(instr & 0x0000ffff); break;
 		}
 }
 
@@ -291,7 +292,7 @@ void PrintInstruction ( DecodedInstr* d) {
 				printf("%s\t$%d, $%d, 0x%.8x\n", i, rt, rs, mips.pc + 4 + (short)(imm << 2)); // beq, bne
 			break;
 		case J:
-			imm = d->regs.j.target << 2; // upper 4 bits will always be 0000
+			imm = (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff);
 			printf("%s\t0x%.8x\n", i, imm); // j, jal
 			break;
 	}
@@ -309,9 +310,9 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 				case jr:
 					return rVals->R_rs;
 				case addu:
-					return (int)rVals->R_rs + (int)rVals->R_rt;
+					return rVals->R_rs + rVals->R_rt;
 				case subu:
-					return (int)rVals->R_rs - (int)rVals->R_rt;
+					return rVals->R_rs - rVals->R_rt;
 				case and:
 					return rVals->R_rs & rVals->R_rt;
 				case or:
@@ -328,13 +329,13 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 		case bne:
 			return rVals->R_rs != rVals->R_rt;
 		case addiu:
-			return (int) rVals->R_rs + (short) d->regs.i.addr_or_immed;
+			return rVals->R_rs + d->regs.i.addr_or_immed;
 		case andi:
 			return rVals->R_rs & d->regs.i.addr_or_immed;
 		case ori:
 			return rVals->R_rs | d->regs.i.addr_or_immed;
 		case lui:
-			return (rVals->R_rt & 0x0000ffff) | (d->regs.i.addr_or_immed << 16);
+			return d->regs.i.addr_or_immed << 16;
 		case lw:
 		case sw:
 			return rVals->R_rs + (short)d->regs.i.addr_or_immed;
@@ -356,7 +357,7 @@ void UpdatePC ( DecodedInstr* d, int val) {
 			mips.pc += (short) d->regs.i.addr_or_immed << 2;
 	}
 	else if (d->type == J)	
-		mips.pc = d->regs.j.target << 2; // upper 4 bits will always be 0000
+		mips.pc = (mips.pc & 0xf0000000) | ((d->regs.j.target << 2) & 0x0fffffff);
 	if(mips.pc > 0x00401000)
 		exit(3);
 }
@@ -374,7 +375,7 @@ void UpdatePC ( DecodedInstr* d, int val) {
 int Mem( DecodedInstr* d, int val, int *changedMem) {
 	if (((opcode)d->op == lw || (opcode)d->op == sw) && 
 	 (val < 0x00401000 || val > 0x00403fff || val % 4 !=0)) {
-		printf("Memory Access Exception at 0x%.8x: address 0x%.8x", mips.pc, val);
+		printf("Memory Access Exception at 0x%.8x: address 0x%.8x", mips.pc - 4, val);
 		exit(2);
 	}
 	*changedMem = -1;
