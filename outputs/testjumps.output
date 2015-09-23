@@ -64,7 +64,7 @@ New pc = 00400024
 Updated r16 to 00000063
 No memory location was updated.
 Executing instruction at 00400024: 03e00008
-jr 	$31
+jr	$31
 New pc = 0040001c
 No register was updated.
 No memory location was updated.
