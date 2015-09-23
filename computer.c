@@ -207,7 +207,8 @@ void Decode ( unsigned int instr, DecodedInstr* d, RegVals* rVals) {
 				rVals->R_rs = mips.registers[d->regs.i.rs = (instr & 0x03e00000) >> 21];
 				rVals->R_rt = mips.registers[d->regs.i.rt = (instr & 0x001f0000) >> 16];
 				d->regs.i.addr_or_immed = instr & 0x0000ffff;
-				break;
+			case addiu:
+				d->regs.i.addr_or_immed = (short)(instr & 0x0000ffff); break;
 		}
 }
 
@@ -309,9 +310,9 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 				case jr:
 					return rVals->R_rs;
 				case addu:
-					return (int)rVals->R_rs + (int)rVals->R_rt;
+					return rVals->R_rs + rVals->R_rt;
 				case subu:
-					return (int)rVals->R_rs - (int)rVals->R_rt;
+					return rVals->R_rs - rVals->R_rt;
 				case and:
 					return rVals->R_rs & rVals->R_rt;
 				case or:
@@ -328,7 +329,7 @@ int Execute ( DecodedInstr* d, RegVals* rVals) {
 		case bne:
 			return rVals->R_rs != rVals->R_rt;
 		case addiu:
-			return (int) rVals->R_rs + (short) d->regs.i.addr_or_immed;
+			return rVals->R_rs + d->regs.i.addr_or_immed;
 		case andi:
 			return rVals->R_rs & d->regs.i.addr_or_immed;
 		case ori:
