@@ -3,10 +3,10 @@ lui	$9, $0, 0x40
 New pc = 00400004
 Updated r09 to 00400000
 No memory location was updated.
-Executing instruction at 00400004: 24091000
-addiu	$9, $0, 4096
+Executing instruction at 00400004: 25291000
+addiu	$9, $9, 4096
 New pc = 00400008
-Updated r09 to 00001000
+Updated r09 to 00401000
 No memory location was updated.
 Executing instruction at 00400008: 240a0063
 addiu	$10, $0, 99
@@ -15,4 +15,17 @@ Updated r10 to 00000063
 No memory location was updated.
 Executing instruction at 0040000c: ad2a0004
 sw	$10, 4($9)
-Memory Access Exception at 0x0040000c: address 0x00001004
+New pc = 00400010
+No register was updated.
+Updated memory at address 00401004 to 00000063
+Executing instruction at 00400010: 8d2b0004
+lw	$11, 4($9)
+New pc = 00400014
+Updated r11 to 00000063
+No memory location was updated.
+Executing instruction at 00400014: 8d2c0000
+lw	$12, 0($9)
+New pc = 00400018
+Updated r12 to 00000000
+No memory location was updated.
+Executing instruction at 00400018: 20000000
